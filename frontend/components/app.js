@@ -9,23 +9,21 @@ const App = () => (
   <div>
     <header>
       <div className='header-wrapper'>
-
-        <div className='header-bar'>
-          <h1>SugarFix</h1>
-          <HeaderBar />
-        </div>
+        <HeaderBar />
       </div>
 
       <div className='header-nav-wrapper'>
-        <div className='nav-bar'>
-          <NavBar />
-        </div>
+        <NavBar />
       </div>
 
     </header>
 
-    <AuthRoute path="/login" component={SessionFormContainer} />
-    <AuthRoute path="/signup" component={SessionFormContainer} />
+    <main>
+      <div className='main-wrapper group'>
+      <AuthRoute path="/login" component={SessionFormContainer} />
+      <AuthRoute path="/signup" component={SessionFormContainer} />
+      </div>
+    </main>
   </div>
 );
 

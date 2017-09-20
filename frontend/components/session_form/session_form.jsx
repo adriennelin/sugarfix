@@ -60,14 +60,16 @@ class SessionForm extends React.Component{
 
   render(){
     return (
-      <div className='session-form-container'>
-        <form onSubmit={this.handleSubmit}>
-          <h2>{this.loginGreeting()}</h2>
-          <br/><br/>
-          <p className='subheading'> {this.loginMessage()} </p> {this.navLink()}
+      <div className='session-form-container group'>
+        <form className='session-form group' onSubmit={this.handleSubmit}>
+          <h2 className='group'>{this.loginGreeting()}</h2>
+          <div>
+            <p className='subheading group'>{this.loginMessage()} </p>
+            <p className='session-form-toggle-link group'>{this.navLink()}</p>
+          </div>
           {this.renderErrors()}
 
-          <div className='login-form'>
+          <div className='session-form-inputs'>
             <label>
               <input className='login-field' type='text' value={this.state.username}
                      placeholder='Username' onChange={this.update('username')} />
