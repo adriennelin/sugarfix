@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { logout } from '../../actions/session_actions';
-import UserButton from './user_button';
+import HeaderBar from './header_bar';
 
 const mapStateToProps = ({session}) => ({
   currentUser: session.currentUser
@@ -10,4 +10,4 @@ const mapDispatchToProps = (dispatch) => ({
   logout: () => dispatch(logout())
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(UserButton);
+export default connect(mapStateToProps, mapDispatchToProps)(HeaderBar);

@@ -14,8 +14,8 @@ const welcomeMessage = (currentUser, logout) => (
   </div>
 );
 
-const UserButton = ({currentUser, logout}) => (
+const HeaderBar = ({currentUser, logout}) => (
   currentUser ? welcomeMessage(currentUser, logout) : sessionLinks()
 );
 
-export default UserButton;
+export default HeaderBar;

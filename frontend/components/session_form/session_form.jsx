@@ -60,22 +60,22 @@ class SessionForm extends React.Component{
 
   render(){
     return (
-      <div className = 'login-form-container'>
+      <div className='session-form-container'>
         <form onSubmit={this.handleSubmit}>
-          {this.loginGreeting()}
+          <h2>{this.loginGreeting()}</h2>
           <br/><br/>
-          {this.loginMessage()} {this.navLink()}
+          <p className='subheading'> {this.loginMessage()} </p> {this.navLink()}
           {this.renderErrors()}
 
-          <div className = 'login-form'>
+          <div className='login-form'>
             <label>
-              <input className ='login-field' type='text' value={this.state.username}
-                     onChange={this.update('username')} />
+              <input className='login-field' type='text' value={this.state.username}
+                     placeholder='Username' onChange={this.update('username')} />
             </label>
             <br/>
             <label>
-              <input className ='login-field' type='password' value={this.state.password}
-                     onChange={this.update('password')} />
+              <input className='login-field' type='password' value={this.state.password}
+                     placeholder='Password' onChange={this.update('password')} />
             </label>
             <br/>
             <input type='submit' className='session-submit-button'
