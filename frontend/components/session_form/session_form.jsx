@@ -58,6 +58,13 @@ class SessionForm extends React.Component{
     );
   }
 
+  demoLogin(){
+    return (e) => {
+      e.preventDefault();
+      this.props.login({username:'guest user', password:'123456'});
+    };
+  }
+
   render(){
     return (
       <div className='session-form-container group'>
@@ -82,7 +89,10 @@ class SessionForm extends React.Component{
             <br/>
             <input type='submit' className='session-submit-button'
                    value={this.props.formType === 'login' ? 'Log In' : 'Sign Up'}/>
+            <button className='demo-login'
+                    onClick={this.demoLogin()}>Demo Login</button>
           </div>
+
         </form>
       </div>
     );
