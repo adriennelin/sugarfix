@@ -31,7 +31,7 @@ class HeaderBar extends React.Component{
   render(){
     return (
       <div className='header-bar'>
-        <img src='http://res.cloudinary.com/adrienne/image/upload/v1505933816/logo-white_blfc6f.png'
+        <img src='https://res.cloudinary.com/adrienne/image/upload/v1505933816/logo-white_blfc6f.png'
              className='logo' alt='sugarfix logo'></img>
            {this.props.currentUser ?
              this.welcomeMessage(this.props.currentUser, this.props.logout)
