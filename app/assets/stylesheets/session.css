@@ -1,7 +1,3 @@
-// Place all the styles related to the Session controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 .session-form-container {
   display: flex;
   width: 1000px;
@@ -19,7 +15,6 @@
 
 .session-form-toggle-link a {
   text-decoration: none;
-  color: #0073bb;
   font-size: 14px;
   font-weight: bolder;
 }

@@ -10,10 +10,13 @@ class CreateBusinesses < ActiveRecord::Migration[5.1]
       t.string :phone
       t.string :site_url
       t.string :category, null: false
+      t.float :rating, null: false
       t.string :cost, null: false
       t.timestamps
     end
     add_index :businesses, :name
     add_index :businesses, :category
+    add_index :businesses, :rating
+    add_index :businesses, :cost
   end
 end

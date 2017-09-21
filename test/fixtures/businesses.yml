@@ -12,6 +12,7 @@
 #  phone         :string
 #  site_url      :string
 #  category      :string           not null
+#  rating        :float            not null
 #  cost          :string           not null
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null

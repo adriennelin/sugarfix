@@ -20,7 +20,8 @@ Business.create(
   long: -122.397142,
   phone: '(415) 967-2622',
   site_url: 'https://www.bobaguys.com/',
-  category: 'bubble tea',
+  category: 'Bubble Tea',
+  rating: 4,
   cost: '$'
 )
 
@@ -32,7 +33,8 @@ Business.create(
   lat: 37.757807,
   long: -122.388116,
   phone: '(415) 970-0750',
-  category: 'ice cream',
+  category: 'Ice Cream',
+  rating: 4.5,
   cost: '$'
 )
 
@@ -45,7 +47,8 @@ Business.create(
   long: -122.418208,
   phone: '(415) 829-7700',
   site_url: 'http://www.mrholmesbakehouse.com/',
-  category: 'bakery',
+  category: 'Bakery',
+  rating: 4,
   cost: '$$'
 )
 
@@ -58,7 +61,8 @@ Business.create(
   long: -122.440714,
   phone: '(415) 440-1700',
   site_url: 'http://bpatisserie.com/',
-  category: 'bakery',
+  category: 'Bakery',
+  rating: 4,
   cost: '$$'
 )
 
@@ -71,7 +75,8 @@ Business.create(
   long: -122.420475,
   phone: '(808) 224-6626',
   site_url: 'http://gardencreamery.com/home/',
-  category: 'ice cream',
+  category: 'Ice Cream',
+  rating: 3.5,
   cost: '$'
 )
 
@@ -83,7 +88,8 @@ Business.create(
   lat: 37.783421,
   long: -122.459264,
   phone: '(415) 750-9460',
-  category: 'bakery',
+  category: 'Bakery',
+  rating: 4.5,
   cost: '$$'
 )
 
@@ -95,7 +101,8 @@ Business.create(
   long: -122.401318,
   phone: '(415) 780-4429',
   site_url: 'https://www.milkbombicecream.com/',
-  category: 'bakery',
+  category: 'Bakery',
+  rating: 4,
   cost: '$$'
 )
 
@@ -107,7 +114,8 @@ Business.create(
   long: -122.290602,
   phone: '(510) 547-6400',
   site_url: 'http://starterbakery.com/',
-  category: 'bakery',
+  category: 'Bakery',
+  rating: 4,
   cost: '$'
 )
 
@@ -119,7 +127,8 @@ Business.create(
   long: -122.117033,
   phone: '(650) 946-2293',
   site_url: 'https://www.manresabread.com/',
-  category: 'bakery',
+  category: 'Bakery',
+  rating: 4.5,
   cost: '$$$'
 )
 
@@ -131,6 +140,7 @@ Business.create(
   long: -122.424109,
   phone: '(415) 487-2600',
   site_url: 'http://www.tartinebakery.com/',
-  category: 'bakery',
+  category: 'Bakery',
+  rating: 5,
   cost: '$$'
 )

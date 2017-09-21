@@ -25,11 +25,14 @@ ActiveRecord::Schema.define(version: 20170920202345) do
     t.string "phone"
     t.string "site_url"
     t.string "category", null: false
+    t.float "rating", null: false
     t.string "cost", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["category"], name: "index_businesses_on_category"
+    t.index ["cost"], name: "index_businesses_on_cost"
     t.index ["name"], name: "index_businesses_on_name"
+    t.index ["rating"], name: "index_businesses_on_rating"
   end
 
   create_table "users", force: :cascade do |t|

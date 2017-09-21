@@ -9,21 +9,27 @@ import BusinessIndexContainer from './business_index/business_index_container';
 const App = () => (
   <div>
     <header>
-      <div className='header-wrapper'>
-        <HeaderBar />
-      </div>
+      <div className="main-header">
+        <div className='main-header-wrapper'>
+          <HeaderBar />
+        </div>
 
-      <div className='header-nav-wrapper'>
-        <NavBar />
+        <div className='header-nav-wrapper'>
+          <NavBar />
+        </div>
       </div>
 
     </header>
 
     <main>
-      <div className='main-wrapper group'>
-      <AuthRoute path="/login" component={SessionFormContainer} />
-      <AuthRoute path="/signup" component={SessionFormContainer} />
-      <Route exact path="/" component={ BusinessIndexContainer } />
+      <div className='main-wrapper'>
+        <div className='top-bar'>
+        </div>
+        <div className='content-container'>
+          <AuthRoute path="/login" component={SessionFormContainer} />
+          <AuthRoute path="/signup" component={SessionFormContainer} />
+          <Route exact path="/" component={ BusinessIndexContainer } />
+        </div>
       </div>
     </main>
   </div>

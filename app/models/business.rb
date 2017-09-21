@@ -12,13 +12,14 @@
 #  phone         :string
 #  site_url      :string
 #  category      :string           not null
+#  rating        :float            not null
 #  cost          :string           not null
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
 #
 
 class Business < ApplicationRecord
-  validates :name, :address, :lat, :long, :category, :cost, presence: true
+  validates :name, :address, :lat, :long, :category, :rating, :cost, presence: true
 
 
 end
