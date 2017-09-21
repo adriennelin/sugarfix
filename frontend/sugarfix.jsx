@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     store = configureStore();
   }
-  
+
   const root = document.getElementById('root');
 
   window.getState = store.getState;
