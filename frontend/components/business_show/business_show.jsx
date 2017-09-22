@@ -123,6 +123,27 @@ class BusinessShow extends React.Component {
                 </div>
               </div>
 
+              <div className='photo-container'>
+                <div className='photo-strip'>
+                  <div className='photo-strip-media prev'>
+
+                  </div>
+                  <div className='photo-strip-media curr'>
+                    <div className='photo photo-1'>
+
+                    </div>
+                    <div className='photo photo-2'>
+
+                    </div>
+                    <div className='photo photo-3'>
+
+                    </div>
+                  </div>
+                  <div className='photo-strip-media next'>
+
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
