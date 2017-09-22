@@ -8,10 +8,6 @@ class SessionForm extends React.Component{
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  // componentDidUpdate(){
-  //   this.setState({errors:this.state.errors.session});
-  // }
-
   update(field) {
     return(e) => this.setState({[field]:e.target.value});
   }
@@ -24,10 +20,13 @@ class SessionForm extends React.Component{
 
   navLink(){
     if(this.props.formType === 'login'){
-      return <Link to='/signup'>Sign up</Link>;
+      return <Link to='/signup'
+                   onClick={this.props.receiveErrors}>Sign up</Link>;
     } else {
-      return <Link to='/login'>Log in</Link>;
+      return <Link to='/login'
+                   onClick={this.props.receiveErrors}>Log in</Link>;
     }
+
   }
 
   loginGreeting(){
