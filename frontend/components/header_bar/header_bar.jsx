@@ -6,10 +6,6 @@ class HeaderBar extends React.Component {
     super(props);
   }
 
-  componentWillReceiveProps(newProps) {
-    this.setState(newProps.post);
-  }
-
   signupLink() {
     return (
       <div className='header-signup'>

@@ -8,11 +8,9 @@ class SessionForm extends React.Component{
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentWillReceiveProps(nextProps){
-    if(nextProps.loggedIn) {
-      this.props.history.push('/');
-    }
-  }
+  // componentDidUpdate(){
+  //   this.setState({errors:this.state.errors.session});
+  // }
 
   update(field) {
     return(e) => this.setState({[field]:e.target.value});
@@ -52,8 +50,7 @@ class SessionForm extends React.Component{
     return (
       <ul className='errors-ul'>
         {this.props.errors.map((error, idx) => (
-          <li className='errors-li'
-              key={`error-${idx}`}>{error}</li>
+          <li key={`error-${idx}`}>{error}</li>
         ))}
       </ul>
     );
@@ -68,12 +65,12 @@ class SessionForm extends React.Component{
 
   render(){
     return (
-      <div className='session-form-container group'>
-        <form className='session-form group' onSubmit={this.handleSubmit}>
+      <div className='session-form-container'>
+        <form className='session-form' onSubmit={this.handleSubmit}>
           <h2 className='group'>{this.loginGreeting()}</h2>
           <div>
-            <p className='subheading group'>{this.loginMessage()} </p>
-            <p className='session-form-toggle-link group'>{this.navLink()}</p>
+            <span className='subheading'>{this.loginMessage()} </span>
+            <span className='session-form-toggle-link'>{this.navLink()}</span>
           </div>
           {this.renderErrors()}
 

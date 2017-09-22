@@ -19,6 +19,13 @@
   font-weight: bolder;
 }
 
+.errors-ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+}
+
 .login-field {
   width: 300px;
   height: 30px;
@@ -62,14 +69,4 @@
 
 .demo-login:hover {
   cursor: pointer;
-}
-
-.errors-ul {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.errors-li {
-  font-weight: bolder;
-  display: block;
 }

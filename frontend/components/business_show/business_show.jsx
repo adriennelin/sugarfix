@@ -71,11 +71,11 @@ class BusinessShow extends React.Component {
                         </div>
                       </li>
 
-                      <li classname='phone'>
+                      <li className='phone'>
                         <span>{biz.phone}</span>
                       </li>
 
-                      <li classname='biz-url'>
+                      <li className='biz-url'>
                         <span>
                           <a href={biz.site_url}>
                             {biz.site_url.split('www.')[1]}</a>
