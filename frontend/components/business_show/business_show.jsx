@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ratingToStars from '../../util/star_util';
+
 
 class BusinessShow extends React.Component {
   componentDidMount() {
@@ -46,6 +48,11 @@ class BusinessShow extends React.Component {
               </div>
 
               <div className='biz-header-right'>
+                <Link to={`/businesses/${biz.id}/newreview`}
+                      className='write-review'
+                  >
+                  Write a Review
+                </Link>
               </div>
 
             </div>
@@ -58,6 +65,10 @@ class BusinessShow extends React.Component {
                   </div>
                   <div className='map-text'>
                     <ul>
+                      <span className='icon'>
+                        <img src='https://res.cloudinary.com/adrienne/image/upload/v1506113350/marker_icon_rwjbh6.png'
+                          />
+                      </span>
                       <li className='map-address-box-li'>
                         <div className='map-address-box'>
                           <address className='address'>
@@ -71,13 +82,22 @@ class BusinessShow extends React.Component {
                         </div>
                       </li>
 
+                      <span className='icon'>
+                        <img src='https://res.cloudinary.com/adrienne/image/upload/v1506113350/phone_icon_nep5f4.png'
+                          />
+                      </span>
                       <li className='phone'>
                         <span>{biz.phone}</span>
                       </li>
 
+                      <span className='icon'>
+                        <img src='https://res.cloudinary.com/adrienne/image/upload/v1506113350/link_icon_sjqvva.png'
+                          />
+                      </span>
                       <li className='biz-url'>
                         <span>
-                          <a href={biz.site_url}>
+                          <a href={biz.site_url}
+                             target='_blank'>
                             {biz.site_url.split('www.')[1]}</a>
                         </span>
                       </li>

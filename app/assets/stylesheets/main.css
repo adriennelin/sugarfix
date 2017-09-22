@@ -41,9 +41,25 @@ a:hover {
 }
 
 .group:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+}
+
+.icon:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .subheading {

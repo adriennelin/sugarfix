@@ -28,6 +28,29 @@
   padding-right: 30px;
 }
 
+.biz-header-right {
+  display: table;
+  position: relative;
+}
+
+.write-review {
+  color: white;
+  background-color: #d90007;
+  border-radius: 3px;
+  border: 1px solid #8d0005;
+  width: 160px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: bolder;
+  padding: 8px 19px 9px;
+  margin-right: 12px;
+}
+
+.write-review:hover {
+  text-decoration: none;
+  background-color: #ed0008;
+}
+
 .biz-show-name {
   /*display: inline;*/
   padding-top: 0;
@@ -52,7 +75,7 @@
 }
 
 .map-box-container {
-  width: 33.3333%;
+  width: 300px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -74,6 +97,10 @@
   font-size: 14px;
 }
 
+.map-text ul {
+  padding-left: 5px;
+}
+
 .map-text li {
   margin-bottom: 3px;
 }
@@ -88,6 +115,16 @@
   margin-left: 24px;
 }
 
+.icon img {
+  width: 18px;
+  height: 18px;
+}
+
 .map-address-box address {
   font-weight: bold;
+  margin-top: -1px;
+}
+
+.phone, .biz-url {
+  margin-left: 24px;
 }
