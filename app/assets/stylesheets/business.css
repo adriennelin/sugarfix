@@ -46,3 +46,48 @@
   float: left;
   clear: both;
 }
+
+.biz-sub-header {
+  display: table;
+}
+
+.map-box-container {
+  width: 33.3333%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.map-box {
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.map {
+  overflow: hidden;
+  height: 135px;
+  border: 1px solid #ccc;
+}
+
+.map-text {
+  min-height: 105px;
+  font-size: 14px;
+}
+
+.map-text li {
+  margin-bottom: 3px;
+}
+
+.map-address-box-li {
+  margin-bottom: 3px;
+  position: relative;
+}
+
+.map-address-box {
+  line-height: 18px;
+  margin-left: 24px;
+}
+
+.map-address-box address {
+  font-weight: bold;
+}

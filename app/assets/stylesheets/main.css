@@ -7,7 +7,6 @@ h1 {
   color: #333;
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 6px;
   padding-top: 6px;
   word-wrap: break-word;
 }
@@ -40,11 +39,12 @@ div {
 a:hover {
   text-decoration: underline;
 }
-/*.group:after {
+
+.group:after {
   content: "";
   display: table;
   clear: both;
-}*/
+}
 
 .subheading {
   color: #333;

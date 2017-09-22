@@ -12,7 +12,7 @@ class BusinessShow extends React.Component {
       <div className='biz-show-container'>
         <div className='biz-top-shelf'>
           <div className='biz-content-container'>
-            <div className='biz-header'>
+            <div className='biz-header group'>
               <div className='biz-header-left'>
                 <h1 className='biz-show-name'>
                   {biz.name}
@@ -44,6 +44,50 @@ class BusinessShow extends React.Component {
                   </span>
                 </div>
               </div>
+
+              <div className='biz-header-right'>
+              </div>
+
+            </div>
+
+            <div className='biz-sub-header'>
+              <div className='map-box-container'>
+                <div className='map-box'>
+                  <div className='map'>
+
+                  </div>
+                  <div className='map-text'>
+                    <ul>
+                      <li className='map-address-box-li'>
+                        <div className='map-address-box'>
+                          <address className='address'>
+                            {biz.address.split(',')[0]}
+                            <br/>
+                            {biz.address.split(',')[1]},
+                            {biz.address.split(',')[2]}
+                          </address>
+                          <span>b/t {biz.cross_streets}</span><br/>
+                          <span>{biz.neighborhood}</span>
+                        </div>
+                      </li>
+
+                      <li classname='phone'>
+                        <span>{biz.phone}</span>
+                      </li>
+
+                      <li classname='biz-url'>
+                        <span>
+                          <a href={biz.site_url}>
+                            {biz.site_url.split('www.')[1]}</a>
+                        </span>
+                      </li>
+
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
