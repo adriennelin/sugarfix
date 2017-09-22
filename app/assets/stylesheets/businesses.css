@@ -105,7 +105,7 @@
   margin-bottom: 8px;
 }
 
-.neighborhood:empty { 
+.neighborhood:empty {
   display: none
 }
 

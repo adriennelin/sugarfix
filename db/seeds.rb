@@ -48,7 +48,7 @@ Business.create(
   lat: 37.438707,
   long: -122.158960,
   phone: '(650) 327-1715',
-  site_url: 'http://tinpotcreamery.com/',
+  site_url: 'http://www.tinpotcreamery.com/',
   category: 'Ice Cream',
   rating: 5,
   cost: '$$'
@@ -63,7 +63,7 @@ Business.create(
   lat: 37.787811,
   long: -122.440714,
   phone: '(415) 440-1700',
-  site_url: 'http://bpatisserie.com/',
+  site_url: 'http://www.bpatisserie.com/',
   category: 'Bakery',
   rating: 4,
   cost: '$$'
@@ -78,7 +78,7 @@ Business.create(
   lat: 37.758582,
   long: -122.420475,
   phone: '(808) 224-6626',
-  site_url: 'http://gardencreamery.com/home/',
+  site_url: 'http://www.gardencreamery.com/home/',
   category: 'Ice Cream',
   rating: 3.5,
   cost: '$'
@@ -120,7 +120,7 @@ Business.create(
   lat: 37.829142,
   long: -122.290602,
   phone: '(510) 547-6400',
-  site_url: 'http://starterbakery.com/',
+  site_url: 'http://www.starterbakery.com/',
   category: 'Bakery',
   rating: 4,
   cost: '$'

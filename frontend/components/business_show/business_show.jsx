@@ -8,6 +8,26 @@ class BusinessShow extends React.Component {
     this.props.fetchBusiness(this.props.match.params.businessId);
   }
 
+  getCrossStreets(){
+    if (this.props.business.cross_streets){
+      return (`b/t ${this.props.business.cross_streets}`);
+    }
+  }
+
+  getURL(){
+    if (this.props.business.site_url){
+      return <a href={this.props.business.site_url}
+         target='_blank'>
+        {this.props.business.site_url.split('.')[1]}.com</a>;
+    }
+  }
+
+  getLinkIcon(){
+    if (this.getURL()) {
+      return <img src='https://res.cloudinary.com/adrienne/image/upload/v1506113350/link_icon_sjqvva.png' />;
+    }
+  }
+
   render() {
     const biz = this.props.business;
     return (
@@ -77,7 +97,8 @@ class BusinessShow extends React.Component {
                             {biz.address.split(',')[1]},
                             {biz.address.split(',')[2]}
                           </address>
-                          <span>b/t {biz.cross_streets}</span><br/>
+                          <div className='cross-streets'>
+                            {this.getCrossStreets()}</div>
                           <span>{biz.neighborhood}</span>
                         </div>
                       </li>
@@ -89,17 +110,11 @@ class BusinessShow extends React.Component {
                       <li className='phone'>
                         <span>{biz.phone}</span>
                       </li>
-
-                      <span className='icon'>
-                        <img src='https://res.cloudinary.com/adrienne/image/upload/v1506113350/link_icon_sjqvva.png'
-                          />
-                      </span>
-                      <li className='biz-url'>
-                        <span>
-                          <a href={biz.site_url}
-                             target='_blank'>
-                            {biz.site_url.split('www.')[1]}</a>
+                        <span className='icon'>
+                          {this.getLinkIcon()}
                         </span>
+                      <li className='biz-url'>
+                          {this.getURL()}
                       </li>
 
 

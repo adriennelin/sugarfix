@@ -125,6 +125,14 @@
   margin-top: -1px;
 }
 
-.phone, .biz-url {
+.map-box .phone, .biz-url {
   margin-left: 24px;
+}
+
+.cross-streets:empty {
+  display:none;
+}
+
+.biz-url:empty {
+  display: none;
 }
