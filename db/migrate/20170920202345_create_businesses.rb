@@ -5,6 +5,7 @@ class CreateBusinesses < ActiveRecord::Migration[5.1]
       t.string :img_url
       t.string :address, null: false
       t.string :cross_streets
+      t.string :neighborhood
       t.float :lat, null: false
       t.float :long, null: false
       t.string :phone

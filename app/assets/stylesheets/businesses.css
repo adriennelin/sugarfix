@@ -56,6 +56,22 @@
   margin-bottom: 6px;
 }
 
+.stars-reviews {
+  margin: 6px 0;
+}
+
+.stars {
+  float: left;
+  margin: -1px 6px 0 0;
+  position: relative;
+}
+
+.stars img {
+  width: 102px;
+  height: 18px;
+  object-fit: scale-down;
+}
+
 .price-category {
   clear: both;
 }
@@ -85,7 +101,16 @@
   margin-top: 3px;
 }
 
+.neighborhood {
+  margin-bottom: 8px;
+}
+
+.neighborhood:empty { 
+  display: none
+}
+
 .address {
   font-style: normal;
   display: block;
+  margin-bottom: 1px;
 }

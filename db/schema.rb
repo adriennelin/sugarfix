@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20170920202345) do
     t.string "img_url"
     t.string "address", null: false
     t.string "cross_streets"
+    t.string "neighborhood"
     t.float "lat", null: false
     t.float "long", null: false
     t.string "phone"

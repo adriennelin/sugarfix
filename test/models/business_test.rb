@@ -7,6 +7,7 @@
 #  img_url       :string
 #  address       :string           not null
 #  cross_streets :string
+#  neighborhood  :string
 #  lat           :float            not null
 #  long          :float            not null
 #  phone         :string

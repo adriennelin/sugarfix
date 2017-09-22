@@ -1,0 +1,48 @@
+.biz-top-shelf {
+  overflow: hidden;
+  min-width: 990px;
+  padding-bottom: 24px;
+  margin-bottom: -18px;
+  position: relative;
+  padding-top: 15px;
+}
+
+.biz-content-container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.biz-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 13px;
+}
+
+.biz-header-left {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-right: 30px;
+}
+
+.biz-show-name {
+  /*display: inline;*/
+  padding-top: 0;
+}
+
+.biz-show-stars-reviews {
+  margin: 9px 0;
+  float: left;
+}
+
+.biz-show-stars {
+  float: left;
+}
+
+.biz-show-price-category {
+  float: left;
+  clear: both;
+}
