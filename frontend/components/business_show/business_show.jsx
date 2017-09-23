@@ -147,6 +147,27 @@ class BusinessShow extends React.Component {
             </div>
           </div>
         </div>
+        <div className='biz-main-container'>
+          <div className='column column-left'>
+
+          </div>
+          <div className='column column-right'>
+            <div className='summary-box'>
+              <ul>
+                <li className='hours summary-box-item'>
+
+                </li>
+                <li className='price-range summary-box-item'>
+                  
+                </li>
+                <li className='health-score summary-box-item'>
+
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
 
       </div>
     );
