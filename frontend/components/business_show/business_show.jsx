@@ -158,7 +158,7 @@ class BusinessShow extends React.Component {
 
                 </li>
                 <li className='price-range summary-box-item'>
-                  
+
                 </li>
                 <li className='health-score summary-box-item'>
 

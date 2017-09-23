@@ -13,6 +13,7 @@ class CreateBusinesses < ActiveRecord::Migration[5.1]
       t.string :category, null: false
       t.float :rating, null: false
       t.string :cost, null: false
+      t.text :hours
       t.timestamps
     end
     add_index :businesses, :name
