@@ -6,7 +6,10 @@ import ratingToStars from '../../util/star_util';
 class BusinessShow extends React.Component {
   componentDidMount() {
     this.props.fetchBusiness(this.props.match.params.businessId);
+    window.scrollTo(0, 0);
   }
+
+
 
   getCrossStreets(){
     if (this.props.business.cross_streets){
@@ -116,7 +119,8 @@ class BusinessShow extends React.Component {
   getMenuUrl(){
     if (this.props.business.menu_url){
       return(
-        <a href={this.props.business.menu_url}>
+        <a href={this.props.business.menu_url}
+           target='_blank'>
           Full menu
           <img src='https://res.cloudinary.com/adrienne/image/upload/v1506325423/blue_link_icon_t4s8ni.png' />
         </a>
