@@ -223,44 +223,74 @@
   background: #f5f5f5;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
-  height: 170px;
 }
 
 .summary-box-icon {
-  float: none;
   display: table-cell;
   vertical-align: middle;
-  min-width: 34px;
-  padding-right: 9px;
-  text-align: center
+  min-width: 36px;
+  text-align: center;
 }
 
 .summary-box-text {
   display: table-cell;
   width: 100%;
-  padding: 9px 0;
+  padding: 9px 9px;
   border-bottom: 1px solid #e6e6e6;
   padding-bottom: 8px;
+  font-size: 14px;
+}
+
+.summary-box-item:last-child .summary-box-text {
+  border-bottom: none;
+}
+
+.summary-box-text a {
+  font-weight: bold;
+}
+
+.summary-box-text img {
+  width: auto;
+  height: 12px;
+  margin-left: 6px;
 }
 
 .summary-dl dt {
-  margin-right: 0.25em;
   display: inline;
 }
 
 .summary-dl dd {
   font-weight: bold;
   display: inline;
+  margin-left: 5px;
 }
 
-.clock-icon img {
+.clock img {
   width: 23px;
   height: 23px;
 }
 
-.summary-box-price img {
+.fork-knife img {
+  width: auto;
+  height: 23px;
+}
+
+.dollars {
+  min-width: 36px;
+}
+
+.dollars img {
   width: 8px;
   height: 13px;
   display: inline;
-  margin-right: 1px;
+  margin-right: .8px;
+}
+
+.score-box {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 1px 5px 2px;
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #ccc;
 }

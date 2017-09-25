@@ -32,15 +32,57 @@ class BusinessShow extends React.Component {
     switch (this.props.business.cost) {
       case '$':
         return (
-          <div>
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png' />
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/grey_dollar_icon_igjxjs.png' />
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/grey_dollar_icon_igjxjs.png' />
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/grey_dollar_icon_igjxjs.png' />
+          <div className='dollars'>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/grey_dollar_icon_igjxjs.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/grey_dollar_icon_igjxjs.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/grey_dollar_icon_igjxjs.png'/>
+          </div>
+        );
+      case '$$':
+        return (
+          <div className='dollars'>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/grey_dollar_icon_igjxjs.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/grey_dollar_icon_igjxjs.png'/>
+          </div>
+        );
+      case '$$$':
+        return (
+          <div className='dollars'>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/grey_dollar_icon_igjxjs.png'/>
+          </div>
+        );
+      case '$$$$':
+        return (
+          <div className='dollars'>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
           </div>
         );
       default:
         return null;
+    }
+  }
+
+  getPriceRange(){
+    switch (this.props.business.cost) {
+      case '$':
+        return 'Inexpensive';
+      case '$$':
+        return 'Moderate';
+      case '$$$':
+        return 'Pricey';
+      case '$$$$':
+        return 'High-end';
+      default:
+      return null;
     }
   }
 
@@ -169,55 +211,58 @@ class BusinessShow extends React.Component {
           </div>
           <div className='column column-right'>
             <div className='summary-box'>
-              <ul>
+              <ul className='summary-box-list'>
                 <li className='hours summary-box-item'>
 
-                  <div className='summary-box-icon'>
-                    <div className='clock-icon'>
+                  <div className='summary-box-icon clock'>
                       <img src='https://res.cloudinary.com/adrienne/image/upload/v1506320640/clock_icon_thfi2z.png' />
-                    </div>
                   </div>
-
                   <div className='summary-box-text'>
                     <dl className='summary-dl'>
                       <dt>
-                        <dd>
-
-                        </dd>
                       </dt>
                     </dl>
+                  </div>
+                </li>
+
+                <li className='menu-link summary-box-item'>
+                  <div className='summary-box-icon fork-knife'>
+                    <img src='https://res.cloudinary.com/adrienne/image/upload/v1506324945/fork_knife_icon_aoxutb.png' />
+                  </div>
+                  <div className='summary-box-text'>
+                    <a href={biz.menu_url}>
+                      Full menu
+                      <img src='https://res.cloudinary.com/adrienne/image/upload/v1506325423/blue_link_icon_t4s8ni.png' />
+                    </a>
                   </div>
                 </li>
 
                 <li className='price-range summary-box-item'>
                   <div className='summary-box-icon'>
-                    <div className='summary-box-price'>
                       {this.printDollars()}
-                    </div>
                   </div>
                   <div className='summary-box-text'>
                     <dl className='summary-dl'>
-                      <dt>
-                        <dd>
-
-                        </dd>
-                      </dt>
+                      <dt>Price range</dt>
+                      <dd>
+                        {this.getPriceRange()}
+                      </dd>
                     </dl>
                   </div>
                 </li>
+
                 <li className='health-score summary-box-item'>
                   <div className='summary-box-icon'>
-                    <div className=''>
-
+                    <div className='score-box'>
+                      {biz.health_score}
                     </div>
                   </div>
                   <div className='summary-box-text'>
                     <dl className='summary-dl'>
-                      <dt>
-                        <dd>
-
-                        </dd>
-                      </dt>
+                      <dt>Health inspection</dt>
+                      <dd>
+                        {`${biz.health_score} out of 100`}
+                      </dd>
                     </dl>
                   </div>
                 </li>
