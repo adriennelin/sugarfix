@@ -112,6 +112,31 @@ Business.create(
 )
 
 Business.create(
+  name: 'Tartine Bakery',
+  img_url: 'http://www.tartinebakery.com/stickybun/wp-content/uploads/2013/04/151.jpg,
+            https://s3-media2.fl.yelpcdn.com/bphoto/Yg2yB2gOZDuiWuek_q1zYA/o.jpg,
+            https://s3-media1.fl.yelpcdn.com/bphoto/gxMtWzJnldz2_8iTdT5oSA/o.jpg',
+  address: '600 Guerrero St, San Francisco, CA 94110',
+  neighborhood: 'Mission',
+  lat: 37.761400,
+  long: -122.424109,
+  phone: '(415) 487-2600',
+  site_url: 'http://www.tartinebakery.com/',
+  menu_url: 'http://www.tartinebakery.com/menus-ordering/',
+  category: 'Bakery',
+  rating: 5,
+  cost: '$$$',
+  hours: 'Mon, 8:00 am - 7:00 pm,
+          Tue, 7:30 am - 7:00 pm,
+          Wed, 7:30 am - 7:00 pm,
+          Thu, 7:30 am - 8:00 pm,
+          Fri, 7:30 am - 8:00 pm,
+          Sat, 8:00 am - 8:00 pm,
+          Sun, 8:00 am - 8:00 pm',
+  health_score: 89
+)
+
+Business.create(
   name: 'B. Patisserie',
   img_url: 'https://s3-media4.fl.yelpcdn.com/bphoto/cVk72YkYxrF17myMHAp1dQ/o.jpg,
             https://s3-media2.fl.yelpcdn.com/bphoto/XuqzinleL3dRLMfQfxcDqg/o.jpg,
@@ -231,29 +256,4 @@ Business.create(
           Fri, 7:00 am - 3:00 pm,
           Sat, 7:00 am - 3:00 pm,
           Sun, 7:00 am - 3:00 pm'
-)
-
-Business.create(
-  name: 'Tartine Bakery',
-  img_url: 'http://www.tartinebakery.com/stickybun/wp-content/uploads/2013/04/151.jpg,
-            https://s3-media2.fl.yelpcdn.com/bphoto/Yg2yB2gOZDuiWuek_q1zYA/o.jpg,
-            https://s3-media1.fl.yelpcdn.com/bphoto/gxMtWzJnldz2_8iTdT5oSA/o.jpg',
-  address: '600 Guerrero St, San Francisco, CA 94110',
-  neighborhood: 'Mission',
-  lat: 37.761400,
-  long: -122.424109,
-  phone: '(415) 487-2600',
-  site_url: 'http://www.tartinebakery.com/',
-  menu_url: 'http://www.tartinebakery.com/menus-ordering/',
-  category: 'Bakery',
-  rating: 5,
-  cost: '$$$',
-  hours: 'Mon, 8:00 am - 7:00 pm,
-          Tue, 7:30 am - 7:00 pm,
-          Wed, 7:30 am - 7:00 pm,
-          Thu, 7:30 am - 8:00 pm,
-          Fri, 7:30 am - 8:00 pm,
-          Sat, 8:00 am - 8:00 pm,
-          Sun, 8:00 am - 8:00 pm',
-  health_score: 89
 )
