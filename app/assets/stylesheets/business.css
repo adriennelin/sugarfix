@@ -162,25 +162,32 @@
 .photo-strip-media .photo {
   display: block;
   position: absolute;
-  border: 1px solid #ccc;
+  /*border: 1px solid #ccc;*/
+  width: 200px;
+  height: 215px;
+}
+
+.photo img {
+  object-fit: cover;
+  width: 200px;
+  height: 215px;
 }
 
 .photo-1 {
   left: 0;
   top: 15px;
-  width: 200px;
-  height: 215px;
 }
 .photo-2 {
   left: 200px;
-  width: 240px;
-  height: 240px;
 }
 .photo-3 {
   left: 440px;
   top: 15px;
-  width: 200px;
-  height: 215px;
+}
+
+.photo-2 img {
+  width: 240px;
+  height: 240px;
 }
 
 .biz-main-container {

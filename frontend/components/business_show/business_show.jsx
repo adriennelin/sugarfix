@@ -28,6 +28,23 @@ class BusinessShow extends React.Component {
     }
   }
 
+  getImages(){
+    const images = this.props.business.img_url.split(",");
+    return(
+      <div className='photo-strip-media'>
+        <div className='photo photo-1'>
+          <img src={images[1]} />
+        </div>
+        <div className='photo photo-2'>
+          <img src={images[0]} />
+        </div>
+        <div className='photo photo-3'>
+          <img src={images[2]} />
+        </div>
+      </div>
+    );
+  }
+
   getBizHours(){
     const d = new Date();
     const currentDay = d.getDay();
@@ -82,16 +99,6 @@ class BusinessShow extends React.Component {
       return null;
     }
   }
-
-  // openNow(){
-  //   const d = new Date();
-  //   const currentDay = d.getDay();
-  //   const bizDay = this.props.business.hours.split(',')[(currentDay-1)*2];
-  //   console.log(currentDay);
-  //   if (this.getBizHours()) {
-  //
-  //   }
-  // }
 
   getClockIcon(){
     if (this.getBizHours() === ' Closed') {
@@ -312,17 +319,7 @@ class BusinessShow extends React.Component {
 
               <div className='photo-container'>
                 <div className='photo-strip'>
-                  <div className='photo-strip-media curr'>
-                    <div className='photo photo-1'>
-
-                    </div>
-                    <div className='photo photo-2'>
-
-                    </div>
-                    <div className='photo photo-3'>
-
-                    </div>
-                  </div>
+                  {this.getImages()}
                 </div>
               </div>
             </div>

@@ -16,7 +16,7 @@
 #  category      :string           not null
 #  rating        :float            not null
 #  cost          :string           not null
-#  hours         :text
+#  hours         :text             not null
 #  health_score  :integer
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
