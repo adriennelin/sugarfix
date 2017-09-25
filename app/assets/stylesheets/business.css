@@ -171,6 +171,7 @@
   object-fit: cover;
   width: 200px;
   height: 215px;
+  box-shadow: 0 0 25px -3px rgba(0,0,0,0.5);
 }
 
 .photo-1 {

@@ -13,8 +13,9 @@ const BusinessIndexItem = ({ business, idx }) => {
 
               <div className='biz-photo-div'>
                 <img className='photo-box'
-                  src={business.img_url}
+                  src={business.img_url.split(',')[0]}
                   alt={`${business.name} thumbnail`}/>
+                
               </div>
 
               <div className='main-attr'>
