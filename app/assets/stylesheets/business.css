@@ -148,7 +148,7 @@
 .photo-strip {
   position: relative;
   width: 660px;
-  height: 220px;
+  height: 240px;
 }
 
 .photo-strip-media {
@@ -158,46 +158,34 @@
   transform-style: preserve-3d;
 }
 
-.prev .next {
-  opacity: 0;
-
-}
-
-.current {
-  pointer-events: auto;
-  opacity: 1;
-}
 
 .photo-strip-media .photo {
   display: block;
   position: absolute;
-  margin: -15px;
-  width: 250px;
-  height: 250px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  -webkit-transition-property: -webkit-transform, box-shadow;
-  transition-property: transform, box-shadow;
-  -webkit-transform: scale(.88) translateZ(0);
-  transform: scale(.88) translateZ(0);
   border: 1px solid #ccc;
 }
 
 .photo-1 {
   left: 0;
+  top: 15px;
+  width: 200px;
+  height: 215px;
 }
-.photo-1 {
-  left: 220px;
+.photo-2 {
+  left: 200px;
+  width: 240px;
+  height: 240px;
 }
-.photo-1 {
+.photo-3 {
   left: 440px;
+  top: 15px;
+  width: 200px;
+  height: 215px;
 }
 
 .biz-main-container {
   padding: 18px 36px 15px 15px;
-  width: 960;
+  width: 960px;
 }
 
 .column {
@@ -212,7 +200,7 @@
 }
 
 .column-right {
-  padding: 0 30px 0 0;
+  /*padding: 0 30px 0 0;*/
   margin-right: -15px;
   width: 33.3333%;
 }

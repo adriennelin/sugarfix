@@ -312,9 +312,6 @@ class BusinessShow extends React.Component {
 
               <div className='photo-container'>
                 <div className='photo-strip'>
-                  <div className='photo-strip-media prev'>
-
-                  </div>
                   <div className='photo-strip-media curr'>
                     <div className='photo photo-1'>
 
@@ -325,9 +322,6 @@ class BusinessShow extends React.Component {
                     <div className='photo photo-3'>
 
                     </div>
-                  </div>
-                  <div className='photo-strip-media next'>
-
                   </div>
                 </div>
               </div>
@@ -341,7 +335,7 @@ class BusinessShow extends React.Component {
             </h2>
             <ul className='reviews-list'>
               <li>
-                
+
               </li>
             </ul>
           </div>

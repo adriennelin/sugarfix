@@ -23,7 +23,7 @@
 #
 
 class Business < ApplicationRecord
-  validates :name, :address, :lat, :long, :category, :rating, :cost, presence: true
+  validates :name, :address, :lat, :long, :category, :rating, :cost, :hours, presence: true
 
 
 end
