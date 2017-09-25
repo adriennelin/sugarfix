@@ -18,6 +18,13 @@ h2 {
   margin-bottom: 6px;
 }
 
+h3 {
+  color: #d32323;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
 p {
   display: inline;
 }

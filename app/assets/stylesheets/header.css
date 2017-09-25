@@ -19,8 +19,9 @@
   height: 27px;
 }
 
-.logged-in-message {
+.logged-in-message h3 {
   color: white;
+  font-weight: normal;
   display: flex;
   flex-direction: column;
   align-items: flex-end;

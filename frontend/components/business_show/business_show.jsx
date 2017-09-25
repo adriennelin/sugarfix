@@ -31,10 +31,52 @@ class BusinessShow extends React.Component {
   getBizHours(){
     const d = new Date();
     const currentDay = d.getDay();
-    if (this.props.business.hours){
+    if (this.props.business.hours) {
       const bizHours = this.props.business.hours.split(',')[(currentDay-1)*2+1];
       return (
         bizHours
+      );
+    } else {
+      return null;
+    }
+  }
+
+  getFullBizHours(){
+    if (this.props.business.hours) {
+      const hours = this.props.business.hours.split(',');
+      return (
+        <table>
+          <tbody>
+            <tr>
+              <th>{hours[0]}</th>
+              <td>{hours[1]}</td>
+            </tr>
+            <tr>
+              <th>{hours[2]}</th>
+              <td>{hours[3]}</td>
+            </tr>
+            <tr>
+              <th>{hours[4]}</th>
+              <td>{hours[5]}</td>
+            </tr>
+            <tr>
+              <th>{hours[6]}</th>
+              <td>{hours[7]}</td>
+            </tr>
+            <tr>
+              <th>{hours[8]}</th>
+              <td>{hours[9]}</td>
+            </tr>
+            <tr>
+              <th>{hours[10]}</th>
+              <td>{hours[11]}</td>
+            </tr>
+            <tr>
+              <th>{hours[12]}</th>
+              <td>{hours[13]}</td>
+            </tr>
+          </tbody>
+        </table>
       );
     } else {
       return null;
@@ -294,7 +336,14 @@ class BusinessShow extends React.Component {
         </div>
         <div className='biz-main-container'>
           <div className='column column-left'>
-
+            <h2>Recommended Reviews
+              <span> for {biz.name}</span>
+            </h2>
+            <ul className='reviews-list'>
+              <li>
+                
+              </li>
+            </ul>
           </div>
           <div className='column column-right'>
             <div className='summary-box'>
@@ -348,6 +397,12 @@ class BusinessShow extends React.Component {
                 </li>
 
               </ul>
+            </div>
+            <div className='addl-info'>
+              <div className='info-box biz-hours'>
+                <h3>Hours</h3>
+                {this.getFullBizHours()}
+              </div>
             </div>
           </div>
         </div>

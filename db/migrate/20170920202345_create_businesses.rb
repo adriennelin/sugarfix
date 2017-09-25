@@ -14,7 +14,7 @@ class CreateBusinesses < ActiveRecord::Migration[5.1]
       t.string :category, null: false
       t.float :rating, null: false
       t.string :cost, null: false
-      t.text :hours
+      t.text :hours, null: false
       t.integer :health_score
       t.timestamps
     end

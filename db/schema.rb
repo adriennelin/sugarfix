@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20170920202345) do
     t.string "category", null: false
     t.float "rating", null: false
     t.string "cost", null: false
-    t.text "hours"
+    t.text "hours", null: false
     t.integer "health_score"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

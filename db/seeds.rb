@@ -194,19 +194,19 @@ Business.create(
           Sun, 12:30 pm - 9:00 pm'
 )
 
-Business.create(
-  name: 'Starter Bakery',
-  img_url: 'https://s3-media2.fl.yelpcdn.com/bphoto/n1o5FHDzmO-bcqX7fSZ5dQ/o.jpg',
-  address: '1552 Beach St Ste R, Oakland, CA 94608',
-  neighborhood: 'West Oakland',
-  lat: 37.829142,
-  long: -122.290602,
-  phone: '(510) 547-6400',
-  site_url: 'http://www.starterbakery.com/',
-  category: 'Bakery',
-  rating: 4,
-  cost: '$',
-)
+# Business.create(
+#   name: 'Starter Bakery',
+#   img_url: 'https://s3-media2.fl.yelpcdn.com/bphoto/n1o5FHDzmO-bcqX7fSZ5dQ/o.jpg',
+#   address: '1552 Beach St Ste R, Oakland, CA 94608',
+#   neighborhood: 'West Oakland',
+#   lat: 37.829142,
+#   long: -122.290602,
+#   phone: '(510) 547-6400',
+#   site_url: 'http://www.starterbakery.com/',
+#   category: 'Bakery',
+#   rating: 4,
+#   cost: '$',
+# )
 
 Business.create(
   name: 'Manresa Bread - Los Altos',
