@@ -12,9 +12,12 @@
 #  long          :float            not null
 #  phone         :string
 #  site_url      :string
+#  menu_url      :string
 #  category      :string           not null
 #  rating        :float            not null
 #  cost          :string           not null
+#  hours         :text
+#  health_score  :integer
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
 #

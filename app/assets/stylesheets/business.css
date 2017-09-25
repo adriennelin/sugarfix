@@ -103,6 +103,7 @@
 }
 
 .map-text li {
+  margin-top: 6px;
   margin-bottom: 3px;
 }
 
@@ -232,6 +233,10 @@
   text-align: center;
 }
 
+.summary-box-text:empty {
+  display:none;
+}
+
 .summary-box-text {
   display: table-cell;
   width: 100%;
@@ -293,4 +298,8 @@
   display: inline-block;
   background: #fff;
   border: 1px solid #ccc;
+}
+
+.score-box:empty {
+  display: none;
 }
