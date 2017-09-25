@@ -225,3 +225,42 @@
   border-radius: 4px;
   height: 170px;
 }
+
+.summary-box-icon {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+  min-width: 34px;
+  padding-right: 9px;
+  text-align: center
+}
+
+.summary-box-text {
+  display: table-cell;
+  width: 100%;
+  padding: 9px 0;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 8px;
+}
+
+.summary-dl dt {
+  margin-right: 0.25em;
+  display: inline;
+}
+
+.summary-dl dd {
+  font-weight: bold;
+  display: inline;
+}
+
+.clock-icon img {
+  width: 23px;
+  height: 23px;
+}
+
+.summary-box-price img {
+  width: 8px;
+  height: 13px;
+  display: inline;
+  margin-right: 1px;
+}

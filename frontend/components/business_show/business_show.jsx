@@ -28,6 +28,22 @@ class BusinessShow extends React.Component {
     }
   }
 
+  printDollars(){
+    switch (this.props.business.cost) {
+      case '$':
+        return (
+          <div>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png' />
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/grey_dollar_icon_igjxjs.png' />
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/grey_dollar_icon_igjxjs.png' />
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/grey_dollar_icon_igjxjs.png' />
+          </div>
+        );
+      default:
+        return null;
+    }
+  }
+
   render() {
     const biz = this.props.business;
     return (
@@ -156,12 +172,54 @@ class BusinessShow extends React.Component {
               <ul>
                 <li className='hours summary-box-item'>
 
-                </li>
-                <li className='price-range summary-box-item'>
+                  <div className='summary-box-icon'>
+                    <div className='clock-icon'>
+                      <img src='https://res.cloudinary.com/adrienne/image/upload/v1506320640/clock_icon_thfi2z.png' />
+                    </div>
+                  </div>
 
+                  <div className='summary-box-text'>
+                    <dl className='summary-dl'>
+                      <dt>
+                        <dd>
+
+                        </dd>
+                      </dt>
+                    </dl>
+                  </div>
+                </li>
+
+                <li className='price-range summary-box-item'>
+                  <div className='summary-box-icon'>
+                    <div className='summary-box-price'>
+                      {this.printDollars()}
+                    </div>
+                  </div>
+                  <div className='summary-box-text'>
+                    <dl className='summary-dl'>
+                      <dt>
+                        <dd>
+
+                        </dd>
+                      </dt>
+                    </dl>
+                  </div>
                 </li>
                 <li className='health-score summary-box-item'>
+                  <div className='summary-box-icon'>
+                    <div className=''>
 
+                    </div>
+                  </div>
+                  <div className='summary-box-text'>
+                    <dl className='summary-dl'>
+                      <dt>
+                        <dd>
+
+                        </dd>
+                      </dt>
+                    </dl>
+                  </div>
                 </li>
 
               </ul>
