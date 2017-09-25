@@ -9,8 +9,6 @@ class BusinessShow extends React.Component {
     window.scrollTo(0, 0);
   }
 
-
-
   getCrossStreets(){
     if (this.props.business.cross_streets){
       return (`b/t ${this.props.business.cross_streets}`);
