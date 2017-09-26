@@ -39,13 +39,13 @@ export const fetchBusiness = id => dispatch => (
 );
 
 export const fetchReviews = (bizId) => dispatch => (
-  APIUtil.fetchReviews(bizId).then( reviews =>
+  APIUtil.fetchReviews(bizId).then(reviews =>
     (dispatch(receiveReviews(reviews)))
   )
 );
 
 export const fetchAllReviews = () => dispatch => (
-  APIUtil.fetchAllReviews().then( reviews =>
+  APIUtil.fetchAllReviews().then(reviews =>
     (dispatch(receiveReviews(reviews)))
   )
 );

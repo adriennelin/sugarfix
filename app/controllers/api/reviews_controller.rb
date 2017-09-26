@@ -3,7 +3,7 @@ class Api::ReviewsController < ApplicationController
 
   def index
     if params[:bizId]
-      @reviews = Review.find_by(biz_id: params[:bizId])
+      @reviews = Review.where('biz_id = ?', params[:bizId])
     else
       @reviews = Review.all
     end

@@ -17,7 +17,7 @@ export const fetchReviews = bizId => (
   $.ajax({
     method: 'GET',
     url: 'api/reviews',
-    bizId
+    data: {bizId}
   })
 );
 
