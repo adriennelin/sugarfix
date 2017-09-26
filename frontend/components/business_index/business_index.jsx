@@ -7,11 +7,13 @@ class BusinessIndex extends React.Component {
     this.props.fetchReviews();
   }
 
-  findBizReview(bizId) {
+  findReview(bizId) {
     const reviews = this.props.reviews;
-    const rev = reviews.find( review => {
-      return review.biz_id === bizId;
-    });
+    reviews.find(this.findBizReview());
+  }
+
+  findBizReview(review, bizId) {
+    return review.biz_id === bizId;
   }
 
   render() {

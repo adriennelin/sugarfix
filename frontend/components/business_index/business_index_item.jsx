@@ -7,7 +7,7 @@ const BusinessIndexItem = ({ business, idx, review }) => {
   return (
     <li className='biz-index-item-li'>
       <div className='search-result'>
-        <div className='main-and-seconday-attr'>
+        <div className='main-and-secondary-attr'>
 
           <div className='photo-and-main-attr'>
             <div className='media-flex'>
@@ -73,6 +73,7 @@ const BusinessIndexItem = ({ business, idx, review }) => {
 
         </div>
         </div>
+
         <div className='review-snippet'>
           <ReviewSnippet
             review={review} />

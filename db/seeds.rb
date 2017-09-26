@@ -260,6 +260,51 @@ Business.create(
 )
 
 Review.create(
+  body: "I can't spell their name, but I can eat their ice cream!!",
+  rating: 4,
+  biz_id: 2,
+  reviewer_name: 'Sandy B.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408546/person7_c6usl0.jpg'
+)
+
+Review.create(
+  body: "I randomly walked in here while I was killing time for brunch
+         next door. Bad idea because I ended up getting full from three,
+         yes THREE scoops of their addictively good ice cream. I couldn't
+         help myself, it was that good! Totally worth canceling on my
+         brunch friends...",
+  rating: 4,
+  biz_id: 2,
+  reviewer_name: 'Alex T.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person5_htq4yl.jpg'
+)
+
+Review.create(
+  body: "Two words: WHISKEY ICE CREAM.",
+  rating: 5,
+  biz_id: 2,
+  reviewer_name: 'Toto W.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408277/person1_qyebwg.jpg'
+)
+
+Review.create(
+  body: "I consider myself an ice cream connoisseur. So what do I think
+         of Mr. and Mrs. Miscellaneous? Well weird name aside, this is
+         in my top three ice cream spots in the city. I probably like
+         Humphry Slocombe for the flavors, but this takes the cake for
+         the perfectly creamy texture and high butterfat content.
+
+         If it's your first time, ask for a sample of everything! Don't
+         worry they are really nice about it. Don't miss the cookies
+         either, they are just as good as the cold stuff.",
+  rating: 5,
+  biz_id: 2,
+  reviewer_name: 'Aiden W.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person12_oqc7ci.jpg'
+)
+
+
+Review.create(
   body: "Tartine is the gold standard for sourdough bread. Once you try
         their bread, you'll understand why every serious baker has a
         copy of Chad Robertson's book. His bread is seriously life
@@ -268,9 +313,49 @@ Review.create(
         My favorite is the sesame sourdough loaf - the dark, hard crust
         gives way to the softest, perfectly fluffy, moist center. Be
         careful, because this is a loaf you can devour in one sitting.",
-  rating: 4,
-  biz_id: 1,
+  rating: 5,
+  biz_id: 5,
   reviewer_name: 'Adrienne L.',
-  reviewer_img: 'https://s3-media1.fl.yelpcdn.com/photo/1WNe1fE9N1C6QMQQphY1dg/348s.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/person20_fmy1o9.jpg'
+)
 
+Review.create(
+  body: "This is a carb lover's heaven! Everything baked good you want
+         can be found here - croissants, banana creme pie, scones,
+         bread pudding, and of course the legendary morning bun.",
+  rating: 5,
+  biz_id: 5,
+  reviewer_name: 'Andy H.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person15_l9c3io.jpg'
+)
+
+Review.create(
+  body: "Why is there always a line for the bread? Tartine would get 5
+        stars except that the bread comes out at 4:30PM - is this a real
+        bakery??? And the line wraps around the block.
+
+        I don't like waiting. I'd rather go to Bi-rite nearby and grab
+        whatever they have in stock.",
+  rating: 4,
+  biz_id: 5,
+  reviewer_name: 'Drew M.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408277/person1_qyebwg.jpg'
+)
+
+Review.create(
+  body: "Mommy takes me to Tartine every Sunday morning. I love the
+         raspberry tart!",
+  rating: 5,
+  biz_id: 5,
+  reviewer_name: 'Jessie S.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408160/person11_ubaciw.jpg'
+)
+
+Review.create(
+  body: "Mommy takes me to Tartine every Sunday morning. I love the
+         raspberry tart!",
+  rating: 5,
+  biz_id: 5,
+  reviewer_name: 'Jessie S.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408160/person11_ubaciw.jpg'
 )
