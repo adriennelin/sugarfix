@@ -2,7 +2,11 @@ class Api::ReviewsController < ApplicationController
   before_action :redirect_unless_logged_in, except: [:index]
 
   def index
-    @reviews = Review.all
+    if params[:bizId]
+      @reviews = Review.find_by(biz_id: params[:bizId])
+    else
+      @reviews = Review.all
+    end
   end
 
   def create

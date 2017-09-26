@@ -4,12 +4,12 @@ import BusinessIndexItem from './business_index_item';
 class BusinessIndex extends React.Component {
   componentDidMount() {
     this.props.fetchBusinesses();
-    this.props.fetchReviews();
+    this.props.fetchAllReviews();
   }
 
   findReview(bizId) {
     const reviews = this.props.reviews;
-    return reviews.find( review => {
+    return reviews.find(review => {
       return review.biz_id === bizId;
     });
   }
@@ -32,7 +32,7 @@ class BusinessIndex extends React.Component {
         </div>
 
         <div className='column column-right'>
-          
+
         </div>
 
       </div>

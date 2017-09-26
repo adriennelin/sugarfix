@@ -13,7 +13,15 @@ export const fetchBusiness = id => (
   })
 );
 
-export const fetchReviews = () => (
+export const fetchReviews = bizId => (
+  $.ajax({
+    method: 'GET',
+    url: 'api/reviews',
+    bizId
+  })
+);
+
+export const fetchAllReviews = () => (
   $.ajax({
     method: 'GET',
     url: 'api/reviews'

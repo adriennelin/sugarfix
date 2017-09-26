@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ratingToStars from '../../util/star_util';
+import ReviewIndexItem from './review_index_item';
 
 
 class BusinessShow extends React.Component {
   componentDidMount() {
     this.props.fetchBusiness(this.props.match.params.businessId);
+    this.props.fetchReviews(this.props.match.params.businessId);
     window.scrollTo(0, 0);
   }
 
@@ -219,7 +221,15 @@ class BusinessShow extends React.Component {
     }
   }
 
+  // getBusinessReviews(bizId){
+  //   return this.props.reviews.filter( review => {
+  //     review.biz_id === bizId;
+  //   });
+  // }
+
   render() {
+    console.log(this.props.reviews);
+
     const biz = this.props.business;
     if (biz === undefined ) {
       return ( <div></div> );
@@ -331,9 +341,15 @@ class BusinessShow extends React.Component {
               <span> for {biz.name}</span>
             </h2>
             <ul className='reviews-list'>
-              <li>
+              {
+                this.props.reviews.map(review => (
 
-              </li>
+                    <ReviewIndexItem
+                      key={review.id}
+                      review={review}
+                      />
+                ))
+              }
             </ul>
           </div>
           <div className='column column-right'>

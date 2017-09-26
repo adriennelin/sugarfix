@@ -13,7 +13,7 @@ Review.delete_all
 User.create(username: 'guest user', password: '123456')
 
 Business.create(
-  name: 'Boba Guys - Potrero',
+  name: 'Boba Guys - Potrero Hill',
   img_url: 'https://s3-media4.fl.yelpcdn.com/bphoto/FrcxSuTVhXQq8puPUkBx-Q/o.jpg,
             https://s3-media3.fl.yelpcdn.com/bphoto/lnLoF9kIWf1K8BwB7pevtQ/o.jpg,
             https://s3-media1.fl.yelpcdn.com/bphoto/STfx_WxldlqgncroxEI0yA/o.jpg',
