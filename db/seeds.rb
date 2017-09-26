@@ -355,11 +355,39 @@ Review.create(
 )
 
 Review.create(
-  body: "",
+  body: "Tin Pot was already the best thing in Palo Alto. That's right,
+        not just the best ice cream, best dessert, best food, best
+        grocery store, best park, or what have you...the best THING period.
+
+        And then on my recent visit, I tried their cookies for the first
+        time. woah.
+
+        They were part of the custom ice cream sandwiches, which I
+        hadn't noticed until my last visit. I guess I had blinders on
+        for their ice cream cones these past couple years.
+
+        Anyway, I must have had the biggest sugary carb craving that
+        fateful day, because I zoomed in right on the ice cream cookie
+        sign. This was what I needed. The helpful lady upped the ante,
+        by telling me I could pick two different cookies. This was
+        almost too much to handle.
+
+        I chose the Black Magic (chocolate shortbread!) and Chocolate
+        Chunk. Don't even get me started on the flecks of sea salt
+        generously dotting the surfaces.
+
+        The lady sandwiched a generous scoop of my favorite Earl Grey
+        ice cream between the two. I proceed to go to heaven.
+        Finally, an ice cream sandwich where the cookies are just as
+        good as the ice cream.",
   rating: 5,
   biz_id: 3,
   reviewer_name: 'Adrienne L.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/person20_fmy1o9.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/person20_fmy1o9.jpg',
+  review_photos: 'https://s3-media2.fl.yelpcdn.com/bphoto/kck1WGQ0nnw0Z6j3W9FtZQ/o.jpg,
+                  https://s3-media3.fl.yelpcdn.com/bphoto/tSJopiYibNwIFMBZ6YRBQA/o.jpg,
+                  https://s3-media1.fl.yelpcdn.com/bphoto/4D03Qystx4hu4dAXe_ozCg/o.jpg,
+                  https://s3-media2.fl.yelpcdn.com/bphoto/v6dJWSGqMEIsE0DdV3Uy7A/o.jpg'
 )
 
 Review.create(

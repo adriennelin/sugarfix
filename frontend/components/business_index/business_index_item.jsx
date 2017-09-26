@@ -4,6 +4,7 @@ import ratingToStars from '../../util/star_util';
 import ReviewSnippet from './review_snippet';
 
 const BusinessIndexItem = ({ business, idx, review }) => {
+  console.log(review);
   return (
     <li className='biz-index-item-li'>
       <div className='search-result'>
@@ -75,8 +76,8 @@ const BusinessIndexItem = ({ business, idx, review }) => {
         </div>
 
         <div className='review-snippet'>
-          <ReviewSnippet
-            review={review} />
+            <ReviewSnippet
+              review={review} />
         </div>
       </div>
     </li>

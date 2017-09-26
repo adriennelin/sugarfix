@@ -9,27 +9,32 @@ class BusinessIndex extends React.Component {
 
   findReview(bizId) {
     const reviews = this.props.reviews;
-    reviews.find(this.findBizReview());
-  }
-
-  findBizReview(review, bizId) {
-    return review.biz_id === bizId;
+    return reviews.find( review => {
+      return review.biz_id === bizId;
+    });
   }
 
   render() {
     return (
       <div className='biz-index'>
-        <ul className='biz-index-ul'>
-          {
-            this.props.businesses.map((business, idx) => (
-            <BusinessIndexItem
-              key={business.id}
-              idx={idx+1}
-              business={business}
-              review={this.findBizReview(business.id)} />
-            ))
-          }
-        </ul>
+        <div className='column column-left'>
+          <ul className='biz-index-ul'>
+            {
+              this.props.businesses.map((business, idx) => (
+              <BusinessIndexItem
+                key={business.id}
+                idx={idx+1}
+                business={business}
+                review={this.findReview(business.id)} />
+              ))
+            }
+          </ul>
+        </div>
+
+        <div className='column column-right'>
+          
+        </div>
+
       </div>
     );
   }

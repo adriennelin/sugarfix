@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 20170925194950) do
     t.integer "biz_id", null: false
     t.string "reviewer_name", null: false
     t.string "reviewer_img"
+    t.text "review_photos"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["biz_id"], name: "index_reviews_on_biz_id"

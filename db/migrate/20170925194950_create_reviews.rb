@@ -6,6 +6,7 @@ class CreateReviews < ActiveRecord::Migration[5.1]
       t.integer :biz_id, null: false
       t.string :reviewer_name, null: false
       t.string :reviewer_img
+      t.text :review_photos
       t.timestamps
     end
     add_index :reviews, :biz_id

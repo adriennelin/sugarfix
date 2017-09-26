@@ -222,9 +222,7 @@ class BusinessShow extends React.Component {
   render() {
     const biz = this.props.business;
     if (biz === undefined ) {
-      return (
-        <div></div>
-      );
+      return ( <div></div> );
     }
     return (
       <div className='biz-show-container'>

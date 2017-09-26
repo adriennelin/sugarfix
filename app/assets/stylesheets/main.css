@@ -96,6 +96,10 @@ a:hover {
   /*min-width: 1020px;*/
 }
 
+.content-container {
+  width: 966px;
+}
+
 /*.top-bar {
   background: #f5f5f5;
   border-bottom: 1px solid #e6e6e6;

@@ -1,3 +1,5 @@
+
+
 .biz-index-item-li {
   margin: 0;
   padding: 18px 0;
@@ -13,6 +15,7 @@
 }
 
 .main-and-secondary-attr {
+  display: flex;
   margin: 0 -15px;
   height: auto;
 }
