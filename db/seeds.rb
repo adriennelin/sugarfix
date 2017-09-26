@@ -269,7 +269,8 @@ Review.create(
   rating: 5,
   biz_id: 1,
   reviewer_name: 'Jess E.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/person18_ekhd3h.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/person18_ekhd3h.jpg',
+  review_photos: 'https://s3-media2.fl.yelpcdn.com/bphoto/oX66vFSIyMRQhDWjl05EBA/o.jpg'
 )
 
 Review.create(
@@ -284,7 +285,8 @@ Review.create(
   rating: 5,
   biz_id: 1,
   reviewer_name: 'Steven N.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person14_a6f6ir.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person14_a6f6ir.jpg',
+  review_photos: 'https://s3-media4.fl.yelpcdn.com/bphoto/pAoIn9QrIZ9tU7pz8-8DWg/o.jpg'
 )
 
 Review.create(
@@ -307,7 +309,10 @@ Review.create(
   rating: 4,
   biz_id: 1,
   reviewer_name: 'Stephanie L.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person8_uvhueb.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person8_uvhueb.jpg',
+  review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/Ikp9KwKDMk2rEkhTXPtKoA/o.jpg,
+                  https://s3-media2.fl.yelpcdn.com/bphoto/8AmlI8Q_T-e0c2uaEI2itQ/o.jpg'
+
 )
 
 Review.create(
@@ -327,7 +332,8 @@ Review.create(
   rating: 4,
   biz_id: 2,
   reviewer_name: 'Alex T.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person5_htq4yl.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person5_htq4yl.jpg',
+  review_photos: 'https://s3-media2.fl.yelpcdn.com/bphoto/wPCh-Ho33qGqU7-vXhHz1w/o.jpg'
 )
 
 Review.create(
@@ -335,7 +341,8 @@ Review.create(
   rating: 5,
   biz_id: 2,
   reviewer_name: 'Toto W.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408277/person1_qyebwg.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408277/person1_qyebwg.jpg',
+  review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/UEtTcuWl6mMKArY5fODiAA/o.jpg'
 )
 
 Review.create(
@@ -351,7 +358,21 @@ Review.create(
   rating: 5,
   biz_id: 2,
   reviewer_name: 'Aiden W.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person12_oqc7ci.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person12_oqc7ci.jpg',
+  review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/W_iVkhuyalu5b5SnGb2Kkw/o.jpg,
+                 https://s3-media1.fl.yelpcdn.com/bphoto/I_P4tqn0DrYdZeDxAFhucQ/o.jpg'
+)
+
+Review.create(
+  body: "Everything is awesome!! Well, the roasted banana fudge ripple
+  was just okay. But everything else is awesome!! Earl grey, four
+  barrel coffee, vanilla bean, salted butterscotch, purple sweet
+  potato cinnamallow, the sorbets..aack definitely a no-diet zone.",
+  rating: 4,
+  biz_id: 3,
+  reviewer_name: 'Acorn L.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person6_lj9ok1.jpg',
+  review_photos: 'https://s3-media2.fl.yelpcdn.com/bphoto/v6dJWSGqMEIsE0DdV3Uy7A/o.jpg'
 )
 
 Review.create(
@@ -385,9 +406,65 @@ Review.create(
   reviewer_name: 'Adrienne L.',
   reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/person20_fmy1o9.jpg',
   review_photos: 'https://s3-media2.fl.yelpcdn.com/bphoto/kck1WGQ0nnw0Z6j3W9FtZQ/o.jpg,
-                  https://s3-media3.fl.yelpcdn.com/bphoto/tSJopiYibNwIFMBZ6YRBQA/o.jpg,
-                  https://s3-media1.fl.yelpcdn.com/bphoto/4D03Qystx4hu4dAXe_ozCg/o.jpg,
-                  https://s3-media2.fl.yelpcdn.com/bphoto/v6dJWSGqMEIsE0DdV3Uy7A/o.jpg'
+                  https://s3-media1.fl.yelpcdn.com/bphoto/4D03Qystx4hu4dAXe_ozCg/o.jpg'
+)
+
+Review.create(
+  body: "Forget the ice cream, I'm obsessed with the cookies here!!!
+         I love the corn cookie - it actually tastes like corn, but in
+         the best way possible. The black magic cookies are also amazing.",
+  rating: 5,
+  biz_id: 3,
+  reviewer_name: 'Jess R.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person4_ffrwoo.jpg',
+  review_photos: 'https://s3-media3.fl.yelpcdn.com/bphoto/tSJopiYibNwIFMBZ6YRBQA/o.jpg'
+)
+
+
+Review.create(
+  body: "My first food memories are eating macarons at Chantal Guillon.
+        I quickly developed a taste for these pricey pastries. My parents
+        probably regret taking me so young. Now I demand at least one
+        macaron every day!",
+  rating: 4,
+  biz_id: 4,
+  reviewer_name: 'Justin S.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person10_lqu0sm.jpg',
+  review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/MGhBZ6EHb53jkONxLor4nw/o.jpg'
+)
+
+Review.create(
+  body: "I haven't actually tried the macarons. I'm just reviewing to
+        get yelp elite.",
+  rating: 3,
+  biz_id: 4,
+  reviewer_name: 'Totoro Q.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person3_jjynkb.jpg'
+)
+
+Review.create(
+  body: "Laduree, you got some serious competition. SF has its own
+        macaron shop to rival the French domination. The flavors here are all
+        excellent. I especially love the rose and lavender - what can I
+        say, I love floral.",
+  rating: 5,
+  biz_id: 4,
+  reviewer_name: 'Aisha C.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person2_rdzdzw.jpg',
+  review_photos: 'https://s3-media4.fl.yelpcdn.com/bphoto/lHc7oWt160i1tOAK9GWFBA/o.jpg,
+                  https://s3-media1.fl.yelpcdn.com/bphoto/8vLCZZZxxOG7Ik6inr3TLw/o.jpg'
+)
+
+Review.create(
+  body: "Geez I suck at baking. Everytime I try to make french macarons,
+        I get these puddles of flat disks. I guess I shouldn't feel that
+        bad because macarons are some of the more difficult things to bake.
+        This makes me appreciate living so close to Chantal Guillon. I can
+        get my macaron fix here instead.",
+  rating: 4,
+  biz_id: 4,
+  reviewer_name: 'Tiffany H.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person13_hryr9q.jpg'
 )
 
 Review.create(
@@ -404,7 +481,8 @@ Review.create(
   rating: 5,
   biz_id: 5,
   reviewer_name: 'Adrienne L.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/person20_fmy1o9.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/person20_fmy1o9.jpg',
+  review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/y_IVO6eVrQ_L-yPcmN-UYQ/o.jpg'
 )
 
 Review.create(
@@ -414,7 +492,8 @@ Review.create(
   rating: 5,
   biz_id: 5,
   reviewer_name: 'Andy H.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person15_l9c3io.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person15_l9c3io.jpg',
+  review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/y_IVO6eVrQ_L-yPcmN-UYQ/o.jpg'
 )
 
 Review.create(
@@ -436,14 +515,6 @@ Review.create(
   rating: 5,
   biz_id: 5,
   reviewer_name: 'Jessie S.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408160/person11_ubaciw.jpg'
-)
-
-Review.create(
-  body: "Mommy takes me to Tartine every Sunday morning. I love the
-         raspberry tart!",
-  rating: 5,
-  biz_id: 5,
-  reviewer_name: 'Jessie S.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408160/person11_ubaciw.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408160/person11_ubaciw.jpg',
+  review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/gxMtWzJnldz2_8iTdT5oSA/o.jpg'
 )

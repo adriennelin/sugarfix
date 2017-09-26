@@ -117,3 +117,7 @@
   display: block;
   margin-bottom: 1px;
 }
+
+.reviews-header {
+  border-bottom: 1px solid #e6e6e6;
+}

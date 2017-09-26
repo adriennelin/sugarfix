@@ -228,8 +228,6 @@ class BusinessShow extends React.Component {
   // }
 
   render() {
-    console.log(this.props.reviews);
-
     const biz = this.props.business;
     if (biz === undefined ) {
       return ( <div></div> );
@@ -337,13 +335,14 @@ class BusinessShow extends React.Component {
         </div>
         <div className='biz-main-container'>
           <div className='column column-left'>
-            <h2>Recommended Reviews
-              <span> for {biz.name}</span>
-            </h2>
+            <div className='reviews-header'>
+              <h2>Recommended Reviews
+                <span> for {biz.name}</span>
+              </h2>
+            </div>
             <ul className='reviews-list'>
               {
                 this.props.reviews.map(review => (
-
                     <ReviewIndexItem
                       key={review.id}
                       review={review}
