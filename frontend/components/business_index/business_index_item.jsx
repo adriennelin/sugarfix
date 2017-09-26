@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import ratingToStars from '../../util/star_util';
+import ReviewSnippet from './review_snippet';
 
-const BusinessIndexItem = ({ business, idx }) => {
+const BusinessIndexItem = ({ business, idx, review }) => {
   return (
     <li className='biz-index-item-li'>
       <div className='search-result'>
@@ -15,7 +16,7 @@ const BusinessIndexItem = ({ business, idx }) => {
                 <img className='photo-box'
                   src={business.img_url.split(',')[0]}
                   alt={`${business.name} thumbnail`}/>
-                
+
               </div>
 
               <div className='main-attr'>
@@ -71,6 +72,10 @@ const BusinessIndexItem = ({ business, idx }) => {
           </span>
 
         </div>
+        </div>
+        <div className='review-snippet'>
+          <ReviewSnippet
+            review={review} />
         </div>
       </div>
     </li>

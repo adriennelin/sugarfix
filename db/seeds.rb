@@ -8,6 +8,7 @@
 
 User.delete_all
 Business.delete_all
+Review.delete_all
 
 User.create(username: 'guest user', password: '123456')
 
@@ -256,4 +257,20 @@ Business.create(
           Fri, 7:00 am - 3:00 pm,
           Sat, 7:00 am - 3:00 pm,
           Sun, 7:00 am - 3:00 pm'
+)
+
+Review.create(
+  body: "Tartine is the gold standard for sourdough bread. Once you try
+        their bread, you'll understand why every serious baker has a
+        copy of Chad Robertson's book. His bread is seriously life
+        changing!
+
+        My favorite is the sesame sourdough loaf - the dark, hard crust
+        gives way to the softest, perfectly fluffy, moist center. Be
+        careful, because this is a loaf you can devour in one sitting.",
+  rating: 4,
+  biz_id: 1,
+  reviewer_name: 'Adrienne L.',
+  reviewer_img: 'https://s3-media1.fl.yelpcdn.com/photo/1WNe1fE9N1C6QMQQphY1dg/348s.jpg'
+
 )

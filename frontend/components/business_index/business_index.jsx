@@ -4,6 +4,14 @@ import BusinessIndexItem from './business_index_item';
 class BusinessIndex extends React.Component {
   componentDidMount() {
     this.props.fetchBusinesses();
+    this.props.fetchReviews();
+  }
+
+  findBizReview(bizId) {
+    const reviews = this.props.reviews;
+    const rev = reviews.find( review => {
+      return review.biz_id === bizId;
+    });
   }
 
   render() {
@@ -15,7 +23,8 @@ class BusinessIndex extends React.Component {
             <BusinessIndexItem
               key={business.id}
               idx={idx+1}
-              business={business} />
+              business={business}
+              review={this.findBizReview(business.id)} />
             ))
           }
         </ul>
