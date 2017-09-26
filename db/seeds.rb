@@ -259,6 +259,57 @@ Business.create(
           Sun, 7:00 am - 3:00 pm'
 )
 
+
+Review.create(
+  body: "I'm so happy the Potrero Hill location is open! I can get my
+        Boba Guys fix on my lunch breaks. My go-to is the strawberry
+        matcha tea, but I sometimes switch it up for the horchata. I'm
+        definitely going to be hitting the gym more on my lunch breaks
+        as well lol!",
+  rating: 5,
+  biz_id: 1,
+  reviewer_name: 'Jess E.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/person18_ekhd3h.jpg'
+)
+
+Review.create(
+  body: "This is one of the few spots in SF that sells the mochi muffins
+        from Third Culture Bakery!! What are mochi muffins you ask?
+        They are these super tasty hybrid muffins that have the texture
+        of chewy mochi.
+
+        I'm obsessed. I even forget to order a drink, I
+        just have eyes for dem muffins. Going to get some green tea ones
+        today.",
+  rating: 5,
+  biz_id: 1,
+  reviewer_name: 'Steven N.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person14_a6f6ir.jpg'
+)
+
+Review.create(
+  body: "Overrated. What's with all these weirdly colorful and sugary
+        boba tea spots these days. Where can I go to just get a simple
+        black milk tea tapioca drink that's not $4?! PM me if you know
+        of any in SF, because I sure don't.",
+  rating: 3,
+  biz_id: 1,
+  reviewer_name: 'Hangry P.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408529/person16_umehzg.jpg'
+)
+
+Review.create(
+  body: "It's crazy how fast Boba Guys went from nothing to the most
+         recognizable bubble tea shop in SF and NYC. Their drinks are pretty good,
+         but I really think their strength is the branding and design.
+         I find myself wanting to go just to get a snap for my IG. I mean,
+         how can you resist such photogenic drinks?",
+  rating: 4,
+  biz_id: 1,
+  reviewer_name: 'Stephanie L.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person8_uvhueb.jpg'
+)
+
 Review.create(
   body: "I can't spell their name, but I can eat their ice cream!!",
   rating: 4,
@@ -268,7 +319,7 @@ Review.create(
 )
 
 Review.create(
-  body: "I randomly walked in here while I was killing time for brunch
+  body: "Randomly walked in here while I was killing time for brunch
          next door. Bad idea because I ended up getting full from three,
          yes THREE scoops of their addictively good ice cream. I couldn't
          help myself, it was that good! Totally worth canceling on my
@@ -303,6 +354,13 @@ Review.create(
   reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person12_oqc7ci.jpg'
 )
 
+Review.create(
+  body: "",
+  rating: 5,
+  biz_id: 3,
+  reviewer_name: 'Adrienne L.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/person20_fmy1o9.jpg'
+)
 
 Review.create(
   body: "Tartine is the gold standard for sourdough bread. Once you try
@@ -312,7 +370,9 @@ Review.create(
 
         My favorite is the sesame sourdough loaf - the dark, hard crust
         gives way to the softest, perfectly fluffy, moist center. Be
-        careful, because this is a loaf you can devour in one sitting.",
+        careful, because this is a loaf you can devour in one sitting.
+        I like to get a few types of cheese from Mission Cheese down the
+        block and call it meal. SO good.",
   rating: 5,
   biz_id: 5,
   reviewer_name: 'Adrienne L.',
