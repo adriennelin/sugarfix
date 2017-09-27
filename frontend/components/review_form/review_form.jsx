@@ -15,6 +15,12 @@ class ReviewForm extends React.Component {
     this.navigateToBusinessShow = this.navigateToBusinessShow.bind(this);
   }
 
+  componentDidMount() {
+    this.props.fetchBusiness(this.props.match.params.businessId);
+    this.props.fetchReviews(this.props.match.params.businessId);
+    window.scrollTo(0, 0);
+  }
+
   navigateToBusinessShow() {
     const url = `/businesses/${this.props.match.params.businessId}`;
     this.props.history.push(url);
@@ -36,7 +42,19 @@ class ReviewForm extends React.Component {
     return e => this.setState({ [field]: e.currentTarget.value });
   }
 
+  getFirstImage(){
+    const images = this.props.business.img_url.split(",");
+    return <img src={images[0]} />;
+  }
+
   render() {
+    const biz = this.props.business;
+    const reviews = this.props.reviews;
+    console.log(biz)
+    if (biz === undefined ) {
+      return ( <div></div> );
+    }
+
     return (
       <div className='review-form-main-container'>
         <div className='column column-left'>
@@ -45,7 +63,7 @@ class ReviewForm extends React.Component {
           </div>
           <div className='review-form-biz-summary'>
             <div className='biz-photo'>
-              <img src/>
+              {this.getFirstImage()}
             </div>
           </div>
           <div className="review-form">

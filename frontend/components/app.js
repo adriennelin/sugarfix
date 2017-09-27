@@ -36,7 +36,7 @@ const App = () => (
             exact path="/businesses/:businessId"
             component={BusinessShowContainer} />
           <ProtectedRoute
-            path="/businesses/:businessId/newreview"
+            exact path="/businesses/:businessId/newreview"
             component={ReviewFormContainer}
           />
         </div>

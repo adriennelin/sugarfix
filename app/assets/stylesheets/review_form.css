@@ -14,3 +14,15 @@
   margin-bottom: 12px;
   display: flex;
 }
+
+.biz-photo {
+  border-right: 12px solid transparent;
+  border-left: none;
+}
+
+.biz-photo img {
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
