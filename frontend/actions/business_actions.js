@@ -26,8 +26,8 @@ export const receiveReview = review => ({
   review
 });
 
-export const fetchBusinesses = () => dispatch => (
-  APIUtil.fetchBusinesses().then( businesses =>
+export const fetchBusinesses = bounds => dispatch => (
+  APIUtil.fetchBusinesses(bounds).then( businesses =>
     (dispatch(receiveBusinesses(businesses)))
   )
 );
