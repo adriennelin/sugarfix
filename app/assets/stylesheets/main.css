@@ -98,6 +98,8 @@ a:hover {
 
 .content-container {
   width: 966px;
+  padding-top: 15px;
+  padding-bottom: 36px;
 }
 
 /*.top-bar {

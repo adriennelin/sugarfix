@@ -28,10 +28,6 @@ class BusinessIndex extends React.Component {
               ))
             }
           </ul>
-        // <div className='column column-right'>
-        //
-        // </div>
-
       </div>
     );
   }
