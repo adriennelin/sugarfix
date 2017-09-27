@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20170925194950) do
     t.string "cross_streets"
     t.string "neighborhood"
     t.float "lat", null: false
-    t.float "long", null: false
+    t.float "lng", null: false
     t.string "phone"
     t.string "site_url"
     t.string "menu_url"
