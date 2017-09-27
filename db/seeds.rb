@@ -316,7 +316,8 @@ Review.create(
 )
 
 Review.create(
-  body: "I can't spell their name, but I can eat their ice cream!!",
+  body: "I can't spell their name, but I can eat their ice cream! I love
+        the extra smooth texture here. Never lets me down.",
   rating: 4,
   biz_id: 2,
   reviewer_name: 'Sandy B.',
@@ -517,4 +518,251 @@ Review.create(
   reviewer_name: 'Jessie S.',
   reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408160/person11_ubaciw.jpg',
   review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/gxMtWzJnldz2_8iTdT5oSA/o.jpg'
+)
+
+Review.create(
+  body: "I am yelp elite yelp? I hope this review takes me there.",
+  rating: 3,
+  biz_id: 6,
+  reviewer_name: 'Totoro Q.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person3_jjynkb.jpg'
+)
+
+Review.create(
+  body: "B. Patisserie put the kouign amann on the map for the west coast.
+        Their flaky, sugary pastry is my favorite weekly indulgence.
+        If you like croissants, you will love their version of the kouign
+        amann. It's airy like a croissant, but with with sugar between
+        each layer. So good!",
+  rating: 5,
+  biz_id: 6,
+  reviewer_name: 'Wilson M.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person17_yefljl.jpg',
+  review_photos: 'https://s3-media4.fl.yelpcdn.com/bphoto/NMbIGeIjLUjNTuWJ3sdOVQ/o.jpg'
+)
+
+Review.create(
+  body: "This is one of my favorite bakeries in town. They are known for
+        the kouign amann nature, but they do so many other variations as
+        well! The chocolate is my favorite and they have pumpkin when it's
+        that time of the year.",
+  rating: 4,
+  biz_id: 6,
+  reviewer_name: 'Jenny Y.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person5_htq4yl.jpg',
+  review_photos: 'https://s3-media3.fl.yelpcdn.com/bphoto/btOw0WIH3Zw49BEvC8QD4A/o.jpg,
+                  https://s3-media4.fl.yelpcdn.com/bphoto/0E24Lrda07b1wq3jgU_Cng/o.jpg'
+)
+
+Review.create(
+  body: "Forget about this kouign amann business, I won't eat anything
+        I can't pronouce. Instead, I'm here for the good ol' chocolate chip
+        cookie.",
+  rating: 4,
+  biz_id: 6,
+  reviewer_name: 'Jeffrey G.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408277/person1_qyebwg.jpg',
+  review_photos: ''
+)
+
+Review.create(
+  body: "Check out their churro cones, only available on Saturday afternoons.
+        The warm churro makes the ice cream melt faster, but that's not
+        a problem because I devour it in seconds. Extra bonus points for holding
+        a larger scoop of ice cream over your standard waffle cone.",
+  rating: 4,
+  biz_id: 7,
+  reviewer_name: 'Joy M.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408160/person11_ubaciw.jpg',
+  review_photos: 'https://s3-media4.fl.yelpcdn.com/bphoto/B3bLo5PqvSV8SYVwmTRjtg/o.jpg,
+                 https://s3-media1.fl.yelpcdn.com/bphoto/oU2cmIZnsuxuFKcHV9hUXA/o.jpg'
+)
+
+Review.create(
+  body: "I probably sampled all their flavors (they were really nice about
+        samples), but I honestly couldn't find anything that called out
+        to me. Everything tasted a bit dull, I'm not sure what the other
+        reviewers find good about this spot. I guess the uniqueness of
+        flavors offered? But what's the point, if it doesn't taste great.",
+  rating: 2,
+  biz_id: 7,
+  reviewer_name: 'Tim M.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person9_ldyyeh.jpg',
+  review_photos: 'https://s3-media4.fl.yelpcdn.com/bphoto/1tIUzCeE4rGO9yVKJBEkbQ/o.jpg'
+)
+
+Review.create(
+  body: "Omg the matcha gold flavor is my jam!! It's matcha green tea with
+        bits of toffee. I'm also a fan of the thai tea and black sesame
+        flavors. Love how unique these are!",
+  rating: 5,
+  biz_id: 7,
+  reviewer_name: 'Amy Z.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person8_uvhueb.jpg',
+  review_photos: 'https://s3-media3.fl.yelpcdn.com/bphoto/p4jjKiWadPDe9yKF1MF1Og/o.jpg'
+)
+
+Review.create(
+  body: "With all the creameries in SF, Garden Creamery does stand out
+        because of the variety of asian flavors. While those are fun,
+        they also do the traditional flavors well. A solid addition to the
+        ice cream scene.",
+  rating: 4,
+  biz_id: 7,
+  reviewer_name: 'Kewpie L.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408546/person7_c6usl0.jpg'
+)
+
+Review.create(
+  body: "Even before Bon Appetit named them best new bakery in America, I
+        was a big fan of their croissants. They are life changing!",
+  rating: 5,
+  biz_id: 8,
+  reviewer_name: 'Ben A.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person15_l9c3io.jpg',
+  review_photos: 'https://s3-media2.fl.yelpcdn.com/bphoto/2iAFGY2bfokTu1nYtiJz1A/o.jpg,
+                  https://s3-media2.fl.yelpcdn.com/bphoto/9V8mD7Gan7dDYgouaD6Wmw/o.jpg,
+                  https://s3-media1.fl.yelpcdn.com/bphoto/oXsuSJcxLCifMxFlcVREHQ/o.jpg'
+)
+
+Review.create(
+  body: "This is the best I've had in the US, so it's pretty good, but
+        it pales in comparison to a proper French croissant. I can't
+        put my finger on what's missing. Maybe all the effortlessly put
+        together Parisians.",
+  rating: 3,
+  biz_id: 8,
+  reviewer_name: 'Ellie G.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person2_rdzdzw.jpg'
+)
+
+Review.create(
+  body: "Omg the lines here have finally died down a bit. Thanks Bon Appetit
+        for making a monster this past year. My favorite neighborhood bakery was all of
+        a sudden swarmed, and I could no longer grab a bite without a
+        one hour wait. Now they have lifted the restriction on how much
+        you can buy, and I'm able to get in and out within 15 minutes.
+        Whew.",
+  rating: 5,
+  biz_id: 8,
+  reviewer_name: 'Ryan M.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person14_a6f6ir.jpg',
+  review_photos: 'https://s3-media3.fl.yelpcdn.com/bphoto/SmlcqgkJj0_cgv11LANYQw/o.jpg'
+)
+
+Review.create(
+  body: "Milkbomb definitely fills a void in this style of ice cream shops.
+        Baked Bear is probably the closest, and I thought Milkbomb was better
+        in every aspect.
+
+        Not quite five stars, because the service while nice, was very
+        slow and could be more engaging. The prices were also on the
+        higher side, even for SF.
+
+        I can't wait to go back and try the other waffle cone flavors!",
+  rating: 4,
+  biz_id: 9,
+  reviewer_name: 'Shane C.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person9_ldyyeh.jpg',
+  review_photos: 'https://s3-media4.fl.yelpcdn.com/bphoto/JhmUwHUB77xR2xQ8hBi3Rg/o.jpg'
+)
+
+Review.create(
+  body: "I was honestly expecting Milkbomb to be all looks, but I was
+        pleasantly surprised at how much I enjoyed the desserts here.
+
+        I tried the green tea, ginger, and ube ice cream and liked them
+        all. The ginger ice cream had chunks of candied ginger - so good!
+
+        I also tried the fruity cereal waffle cup and loved it maybe
+        more than the ice cream. The waffle cup tasted just like fruity
+        pebbles! It was thicker than most other waffle cones, which I
+        appreciated as well.",
+
+  rating: 4,
+  biz_id: 9,
+  reviewer_name: 'Adrienne L.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/person20_fmy1o9.jpg',
+  review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/rG-rOhtTZIkV2cDl1wFHVQ/o.jpg,
+                  https://s3-media4.fl.yelpcdn.com/bphoto/h6r00YD0Ga99pNDwkZSSzg/o.jpg'
+)
+
+
+Review.create(
+  body: "I doubled up on the ube here by having the ice cream in an ube crumble donut.
+        Though I couldn't taste much ube flavor in the crumble, the donut
+        itself was solid and served warm. The downside was that it melted
+        the ice cream fast.",
+  rating: 5,
+  biz_id: 9,
+  reviewer_name: 'Jonathan O.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person10_lqu0sm.jpg'
+)
+
+Review.create(
+  body: "The toppings here are lots of fun, as well as the sauces. The green
+        tea sauce was my favorite - it was thick like caramel with strong
+        matcha flavor. The rainbow mochi wasn't as good as other mochi
+        I've had, but I enjoyed it nonetheless. Sadly the ice cream didn't
+        match the toppings for me.",
+  rating: 3,
+  biz_id: 9,
+  reviewer_name: 'Chippy R.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person6_lj9ok1.jpg',
+  review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/reHD0k3eSTpNZAOzseVJMQ/o.jpg'
+)
+
+
+Review.create(
+  body: "Best kougin amann ever. Enough said",
+  rating: 5,
+  biz_id: 10,
+  reviewer_name: 'Piggy K.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408529/person16_umehzg.jpg',
+  review_photos: 'https://s3-media2.fl.yelpcdn.com/bphoto/KSc0pLkalhdxaqnky-SKWw/o.jpg'
+)
+
+Review.create(
+  body: "Ever since Dominique Ansel took my Kouign Amann (KA) virginity,
+  I have longed over this legendary pastry best described as a croissant
+  on crack. Alas, it was a five hour flight away, so I went many years
+  without satisfaction. Then last summer, my life changed for the better
+  when I stumbled upon a local version that was more buttery and caramelized
+  than the one of my distant memories. Yes, I'm talking about Manresa Bread's Kouign Amann!
+
+  Manresa's version is harder on the outside, with an amazingly moist,
+  soft, and buttery center. I've had a chance to try other local KAs
+  now, and I still prefer Manresa Bread's. The consistency can be off
+  sometimes, but when they get it right, it's heavenly! B Patisserie,
+  Starter Bakery, and Dominique Ansel all have a lighter style that
+  leaves me wanting the buttery decadence of Manresa Bread's KA.",
+  rating: 5,
+  biz_id: 10,
+  reviewer_name: 'Adrienne L.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/person20_fmy1o9.jpg',
+  review_photos: 'https://s3-media4.fl.yelpcdn.com/bphoto/dua3TIDexSJhaUAe1cMNTQ/o.jpg,
+                  https://s3-media2.fl.yelpcdn.com/bphoto/YmiXR9U9djpGyJIOoLgkxQ/o.jpg'
+)
+
+Review.create(
+  body: "They make wonderful pastries, but let's not forget about the bread!
+  The loaves here are among the best I've tried. I even took a couple
+  (Levain and Fruit & Nut) with me on the plane for my parents and
+  future in-laws to try on the East Coast. Brownie points!",
+  rating: 4,
+  biz_id: 10,
+  reviewer_name: 'Jane A.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person13_hryr9q.jpg',
+  review_photos: 'https://s3-media3.fl.yelpcdn.com/bphoto/amCpGt32zSnFWTda7WOiJQ/o.jpg'
+)
+
+Review.create(
+  body: "They have my favorite stand at the Sunday Cal Ave farmer's market.
+        My owner always makes sure to stop and buy some goodies for me.
+        What a lucky pup I am.",
+  rating: 5,
+  biz_id: 10,
+  reviewer_name: 'Cutie P.',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person3_jjynkb.jpg',
+  review_photos: 'https://s3-media4.fl.yelpcdn.com/bphoto/7-P2yV5ahWQPsg_UYH8EXA/o.jpg'
 )
