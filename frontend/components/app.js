@@ -5,7 +5,7 @@ import { Route, Redirect, Switch, Link, HashRouter } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 import SessionFormContainer from './session_form/session_form_container';
-import BusinessIndexContainer from './business_index/business_index_container';
+import SearchContainer from './search/search_container';
 import BusinessShowContainer from './business_show/business_show_container';
 import ReviewFormContainer from './review_form/review_form_container';
 
@@ -31,7 +31,7 @@ const App = () => (
         <div className='content-container'>
           <AuthRoute path="/login" component={SessionFormContainer} />
           <AuthRoute path="/signup" component={SessionFormContainer} />
-          <Route exact path="/" component={BusinessIndexContainer} />
+          <Route exact path="/" component={SearchContainer} />
           <Route
             exact path="/businesses/:businessId"
             component={BusinessShowContainer} />

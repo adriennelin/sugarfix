@@ -13,6 +13,10 @@
   align-items: center;
 }
 
+.session-subheading {
+  margin-bottom: 5px;
+}
+
 .session-form-toggle-link a {
   text-decoration: none;
   font-size: 14px;

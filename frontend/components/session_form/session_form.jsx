@@ -67,7 +67,7 @@ class SessionForm extends React.Component{
       <div className='session-form-container'>
         <form className='session-form' onSubmit={this.handleSubmit}>
           <h2 className='group'>{this.loginGreeting()}</h2>
-          <div>
+          <div className='session-subheading'>
             <span className='subheading'>{this.loginMessage()} </span>
             <span className='session-form-toggle-link'>{this.navLink()}</span>
           </div>

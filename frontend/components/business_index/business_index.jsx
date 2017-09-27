@@ -17,7 +17,6 @@ class BusinessIndex extends React.Component {
   render() {
     return (
       <div className='biz-index'>
-        <div className='column column-left'>
           <ul className='biz-index-ul'>
             {
               this.props.businesses.map((business, idx) => (
@@ -29,11 +28,9 @@ class BusinessIndex extends React.Component {
               ))
             }
           </ul>
-        </div>
-
-        <div className='column column-right'>
-
-        </div>
+        // <div className='column column-right'>
+        //
+        // </div>
 
       </div>
     );

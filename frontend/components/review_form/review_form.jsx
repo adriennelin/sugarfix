@@ -5,6 +5,8 @@ class ReviewForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      biz: '',
+      reviews: '',
       rating: 0,
       body: '',
       biz_id: this.props.match.params.businessId,
@@ -19,6 +21,10 @@ class ReviewForm extends React.Component {
     this.props.fetchBusiness(this.props.match.params.businessId);
     this.props.fetchReviews(this.props.match.params.businessId);
     window.scrollTo(0, 0);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.getFirstImage();
   }
 
   navigateToBusinessShow() {
