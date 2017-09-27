@@ -11,8 +11,13 @@ const getCoordsObj = latLng => ({
 class Map extends React.Component {
   componentDidMount() {
     const mapOptions = {
-      center: { lat: 37.7758, lng: -122.435 }, // SF
-      zoom: 12
+      center: { lat: 37.6409, lng: -122.344 },
+      zoom: 9,
+      mapTypeControl: false,
+      streetViewControl: false,
+      zoomControlOptions: {
+        position: google.maps.ControlPosition.TOP_LEFT
+    },
     };
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
