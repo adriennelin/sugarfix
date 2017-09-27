@@ -5,17 +5,21 @@ import Map from '../map/map';
 const Search = ({ businesses,
                   reviews,
                   fetchBusinesses,
-                  fetchAllReviews }) => (
+                  fetchAllReviews,
+                  updateFilter }) => (
   <div>
     <div className='column column-left'>
-      <BusinessIndex businesses={businesses}
-                     reviews={reviews}
-                     fetchBusinesses={fetchBusinesses}
-                     fetchAllReviews={fetchAllReviews}/>
+      <BusinessIndex
+        businesses={businesses}
+        reviews={reviews}
+        fetchBusinesses={fetchBusinesses}
+        fetchAllReviews={fetchAllReviews}
+      />
     </div>
     <div className='column column-right'>
       <Map
         businesses={businesses}
+        updateFilter={updateFilter}
       />
     </div>
   </div>

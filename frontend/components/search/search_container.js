@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import { fetchBusinesses,
          fetchAllReviews
        } from '../../actions/business_actions';
+import { updateFilter } from '../../actions/filter_actions';
 import Search from './search';
 
 const mapStateToProps = ({entities}) => ({
@@ -11,7 +12,8 @@ const mapStateToProps = ({entities}) => ({
 
 const mapDispatchToProps = dispatch => ({
   fetchBusinesses: () => dispatch(fetchBusinesses()),
-  fetchAllReviews: () => dispatch(fetchAllReviews())
+  fetchAllReviews: () => dispatch(fetchAllReviews()),
+  updateFilter: (filter, value) => dispatch(updateFilter(filter, value))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Search);
