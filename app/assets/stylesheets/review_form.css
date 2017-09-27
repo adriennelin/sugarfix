@@ -1,0 +1,16 @@
+.review-form-main-container {
+  padding-top: 15px;
+  padding-bottom: 36px;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.review-header {
+  margin-bottom: 11px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.review-form-biz-summary {
+  margin-bottom: 12px;
+  display: flex;
+}

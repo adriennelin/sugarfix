@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import ratingToStars from '../../util/star_util';
 import ReviewIndexItem from './review_index_item';
 
-
 class BusinessShow extends React.Component {
   componentDidMount() {
     this.props.fetchBusiness(this.props.match.params.businessId);
@@ -220,12 +219,6 @@ class BusinessShow extends React.Component {
       return null;
     }
   }
-
-  // getBusinessReviews(bizId){
-  //   return this.props.reviews.filter( review => {
-  //     review.biz_id === bizId;
-  //   });
-  // }
 
   render() {
     const biz = this.props.business;
