@@ -11,7 +11,7 @@ const BusinessesReducer = (state = {}, action) => {
 
   switch (action.type) {
     case RECEIVE_BUSINESSES:
-      return merge({}, state, action.businesses);
+      return merge({}, action.businesses);
     case RECEIVE_BUSINESS:
       return merge({}, state, {[action.business.id]: action.business});
     case RECEIVE_REVIEW:
