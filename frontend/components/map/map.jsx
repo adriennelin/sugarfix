@@ -48,8 +48,18 @@ class Map extends React.Component {
 
 render() {
     return (
-      <div className='map-container' ref={ map => this.mapNode = map }>
+      <div className='map-header-and-map'>
+        <div className='map-header'>
+          <div className='map-header-text'>
+            Move map to redo search!
+          </div>
+
+        </div>
+        <div className='map-container' ref={ map => this.mapNode = map }>
+        </div>
       </div>
+
+
     );
   }
 }
