@@ -49,6 +49,9 @@ class ReviewForm extends React.Component {
   }
 
   getFirstImage(){
+    if (!this.props.business) {
+      return null;
+    }
     const images = this.props.business.img_url.split(",");
     return <img src={images[0]} />;
   }
@@ -56,11 +59,7 @@ class ReviewForm extends React.Component {
   render() {
     const biz = this.props.business;
     const reviews = this.props.reviews;
-    console.log(biz)
-    if (biz === undefined ) {
-      return ( <div></div> );
-    }
-
+    
     return (
       <div className='review-form-main-container'>
         <div className='column column-left'>

@@ -3,12 +3,14 @@ import { fetchBusiness, fetchReviews } from '../../actions/business_actions';
 import { createReview } from '../../actions/business_actions';
 import ReviewForm from './review_form';
 
-const mapStateToProps = ({errors}, {entities}, {match}) => ({
-  review: entities.review[match.params.reviewId],
+const mapStateToProps = ({errors, entities}, {match}) => {
+  // debugger;
+  return ({
+  // review: entities.review[match.params.reviewId],
   business: entities.businesses[match.params.businessId],
   reviews: Object.values(entities.reviews)
   // errors: errors.reviews
-});
+});};
 
 const mapDispatchToProps = dispatch => ({
   createReview: review => dispatch(createReview(review)),
@@ -17,4 +19,4 @@ const mapDispatchToProps = dispatch => ({
   // receiveErrors: () => dispatch(receiveErrors([]))
   });
 
-export default connect(null, mapDispatchToProps)(ReviewForm);
+export default connect(mapStateToProps, mapDispatchToProps)(ReviewForm);

@@ -42,11 +42,9 @@ class Map extends React.Component {
         southWest: { lat: south, lng: west } };
       this.props.updateFilter('bounds', bounds);
     });
-    google.maps.event.addListener(this.map, 'click', (event) => {
-      const coords = getCoordsObj(event.latLng);
-      this.handleClick(coords);
-    });
+
   }
+
 
 render() {
     return (
@@ -56,4 +54,4 @@ render() {
   }
 }
 
-export default Map;
+export default withRouter(Map);
