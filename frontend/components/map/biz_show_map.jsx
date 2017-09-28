@@ -12,42 +12,24 @@ class BizShowMap extends React.Component {
   componentDidMount() {
     const mapOptions = {
       center: { lat: this.props.biz.lat, lng: this.props.biz.lng },
-      zoom: 9,
+      zoom: 15,
       mapTypeControl: false,
       streetViewControl: false,
+      fullscreenControl: false,
+      zoomControl: true,
       zoomControlOptions: {
-        position: google.maps.ControlPosition.TOP_LEFT,
-      fullscreenControl: false
-    }
+        position: google.maps.ControlPosition.TOP_LEFT
+      },
     };
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map);
-    // this.registerListeners();
     this.MarkerManager.updateMarkers([this.props.biz]);
   }
 
-  // componentDidUpdate() {
-  //   this.MarkerManager.updateMarkers(this.props.businesses);
-  // }
-
-  // registerListeners() {
-  //   google.maps.event.addListener(this.map, 'idle', () => {
-  //     const { north, south, east, west } = this.map.getBounds().toJSON();
-  //     const bounds = {
-  //       northEast: { lat: north, lng: east },
-  //       southWest: { lat: south, lng: west } };
-  //     this.props.updateFilter('bounds', bounds);
-  //   });
-  //   google.maps.event.addListener(this.map, 'click', (event) => {
-  //     const coords = getCoordsObj(event.latLng);
-  //     this.handleClick(coords);
-  //   });
-  // }
-
 render() {
     return (
-      <div className='map-container' ref={ map => this.mapNode = map }>
+      <div className='map-container-small' ref={ map => this.mapNode = map }>
       </div>
     );
   }

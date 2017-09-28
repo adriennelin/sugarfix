@@ -21,10 +21,14 @@ class Map extends React.Component {
   };
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
-    this.MarkerManager = new MarkerManager(this.map);
+    this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
     this.registerListeners();
     this.MarkerManager.updateMarkers(this.props.businesses);
   }
+
+  handleMarkerClick(biz) {
+   this.props.history.push(`businesses/${biz.id}`);
+ }
 
   componentDidUpdate() {
     this.MarkerManager.updateMarkers(this.props.businesses);
@@ -45,7 +49,6 @@ class Map extends React.Component {
   }
 
 render() {
-
     return (
       <div className='map-container' ref={ map => this.mapNode = map }>
       </div>
