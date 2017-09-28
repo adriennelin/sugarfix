@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ratingToStars from '../../util/star_util';
 import ReviewIndexItem from './review_index_item';
+import BizShowMap from '../map/biz_show_map';
 
 class BusinessShow extends React.Component {
   componentDidMount() {
@@ -276,7 +277,8 @@ class BusinessShow extends React.Component {
               <div className='map-box-container'>
                 <div className='map-box'>
                   <div className='map'>
-
+                    <BizShowMap biz={biz}
+                    />
                   </div>
                   <div className='map-text'>
                     <ul>

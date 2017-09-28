@@ -18,7 +18,7 @@ class Map extends React.Component {
       zoomControlOptions: {
         position: google.maps.ControlPosition.TOP_LEFT
     },
-    };
+  };
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map);
@@ -48,9 +48,6 @@ render() {
 
     return (
       <div className='map-container' ref={ map => this.mapNode = map }>
-        <div className='map-box'>
-
-        </div>
       </div>
     );
   }
