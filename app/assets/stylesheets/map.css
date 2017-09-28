@@ -14,11 +14,12 @@
 }
 
 .map-header{
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  height: 35px;
 
   border: 1px solid #ccc;
   border-bottom: none;
