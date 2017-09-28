@@ -204,12 +204,13 @@
   padding: 0 30px 0 0;
   margin-left: 15px;
   width: 66.6666%;
+  height: auto;
 }
 
 .column-right {
-  /*padding: 0 30px 0 0;*/
   margin-right: -15px;
   width: 33.3333%;
+  height: auto;
 }
 
 .summary-box {

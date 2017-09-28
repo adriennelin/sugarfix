@@ -1,5 +1,6 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
+import PreviousReviewItem from './previous_review_item';
 
 class ReviewForm extends React.Component {
   constructor(props) {
@@ -59,18 +60,48 @@ class ReviewForm extends React.Component {
   render() {
     const biz = this.props.business;
     const reviews = this.props.reviews;
-    
+    if (biz === undefined ) {
+      return ( <div></div> );
+    }
+
     return (
       <div className='review-form-main-container'>
         <div className='column column-left'>
           <div className='review-header'>
             <h3>Write a Review</h3>
           </div>
-          <div className='review-form-biz-summary'>
-            <div className='biz-photo'>
-              {this.getFirstImage()}
+            <div className='review-form-biz-summary'>
+              <div className='biz-photo'>
+                {this.getFirstImage()}
+              </div>
+
+              <div className='main-attr'>
+                <span className='rev-biz-name'>
+                  <Link to={`/businesses/${biz.id}`}>
+                  {biz.name}</Link></span>
+
+                <div className='price-category'>
+                  <span className='price'>
+                    {biz.cost}
+                  </span>
+
+                  <span className='bullet'>
+                    •
+                  </span>
+
+                  <span className='category'>
+                    {biz.category}
+                  </span>
+                </div>
+                <address className='address'>
+                  {biz.address.split(',')[0]}
+                  <br/>
+                  {biz.address.split(',')[1]},
+                  {biz.address.split(',')[2]}
+                </address>
+              </div>
             </div>
-          </div>
+
           <div className="review-form">
             <form onSubmit={this.handleSubmit()}>
               <label>Rating</label>
@@ -82,24 +113,55 @@ class ReviewForm extends React.Component {
               />
               <br/>
 
-              <label>Your Review</label>
+              <label>Your review</label>
               <br/>
+              <div className='rating-and-comment'>
+                <div className='review-rating-box'>
 
-              <textarea
-                cols="30"
-                rows="10"
-                value={this.state.body}
-                onChange={this.update("body")}
-              />
+                </div>
+
+                <div className='textarea-container'>
+                  <textarea className='review-textarea'
+                    cols="30"
+                    rows="10"
+                    value={this.state.body}
+                    onChange={this.update("body")}
+                    placeholder="Your review helps others learn about
+                    great dessert spots.
+
+                    Please don't review if you received a freebie for
+                    writing this review, or if you're connected to the
+                    owner or employees."
+                  />
+                </div>
+              </div>
               <br/>
-              <input type="submit" />
+                <div className='submit-and-cancel'>
+                  <input className='submit-button' type="submit" value='Post Review'/>
+                  <button className='review-cancel-button'
+                          onClick={this.navigateToBusinessShow}>Cancel</button>
+                </div>
             </form>
-            <button onClick={this.navigateToBusinessShow}>Cancel</button>
+
           </div>
+
         </div>
         <div className='column column-right'>
-
+          <h3> Reviews for {biz.name} </h3>
+          <div className='example-reviews-list'>
+            <ul>
+              {
+                reviews.map(review => (
+                  <PreviousReviewItem
+                    key={review.id}
+                    review={review}
+                    />
+                ))
+              }
+            </ul>
+          </div>
         </div>
+
       </div>
 
     );

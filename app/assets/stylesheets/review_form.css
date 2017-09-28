@@ -2,6 +2,16 @@
   padding-bottom: 36px;
   width: 960px;
   margin: 0 auto;
+  font-weight: 500;
+}
+
+.review-form-main-container .column-left {
+  padding-right: 15px;
+}
+
+.review-form-main-container .column-right {
+  padding-left: 15px;
+  border-left: 1px solid #e6e6e6;
 }
 
 .review-header {
@@ -12,6 +22,7 @@
 .review-form-biz-summary {
   margin-bottom: 12px;
   display: flex;
+  font-size: 12px;
 }
 
 .biz-photo {
@@ -24,4 +35,111 @@
   width: 60px;
   height: 60px;
   object-fit: cover;
+}
+
+.rev-biz-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.review-form label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.rating-and-comment {
+  padding: 18px 15px 0;
+  margin: 6px 0 12px;
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+.review-rating-box {
+  margin-bottom: 18px;
+}
+
+.review-textarea {
+  min-height: 156px;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #ccc;
+  font-size: 13px;
+  font-weight: normal;
+  padding: 6px 2px 2px 2px;
+  resize: none;
+  outline: none;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.submit-and-cancel {
+  display: flex;
+}
+
+.submit-button {
+  display: flex;
+  background-color: #d90007;
+  border: 1px solid #8d0005;
+  border-radius: 3px;
+  width: 89px;
+  height: 30px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-weight: bolder;
+  padding: 5px 8px;
+}
+
+.submit-button:hover {
+  background-color: #ed0008;
+}
+
+.review-cancel-button {
+  margin-left: 12px;
+  color: #0073bb;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 12px;
+}
+
+.review-cancel-button:hover {
+  text-decoration: underline;
+}
+
+.example-reviews-list {
+  border-top: 1px solid #e6e6e6;
+}
+
+.previous-reviews .avatar {
+  display:flex;
+  align-items: flex-start;
+}
+
+.previous-reviews .avatar img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.reviewer-name {
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-weight: bold;
+  color: #0073bb;
+}
+
+.previous-reviews .review-content {
+  padding-left: none;
+}
+
+.prev-review-body {
+  font-weight: normal;
+  width: 305px;
 }

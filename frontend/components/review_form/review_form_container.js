@@ -4,7 +4,6 @@ import { createReview } from '../../actions/business_actions';
 import ReviewForm from './review_form';
 
 const mapStateToProps = ({errors, entities}, {match}) => {
-  // debugger;
   return ({
   // review: entities.review[match.params.reviewId],
   business: entities.businesses[match.params.businessId],
