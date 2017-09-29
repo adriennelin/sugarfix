@@ -7,16 +7,15 @@ class ReviewForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      biz: '',
-      reviews: '',
       rating: 0,
       body: '',
       biz_id: this.props.match.params.businessId,
-      reviewer_name: '',
-      reviewer_img: '',
+      reviewer_name: this.props.currentUser.username,
+      reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506658158/yelp-blank-avatar.png',
       review_photos: ''
     };
     this.navigateToBusinessShow = this.navigateToBusinessShow.bind(this);
+    this.update = this.update.bind(this);
   }
 
   componentDidMount() {
@@ -37,10 +36,7 @@ class ReviewForm extends React.Component {
   handleSubmit() {
     return (e) => {
       e.preventDefault();
-      const bizId = this.props.match.params.businessId;
-      const review = Object.assign({}, this.state, {
-        biz_id: bizId
-      });
+      const review = Object.assign({}, this.state);
       this.props.createReview({review});
       this.navigateToBusinessShow();
     };
@@ -109,12 +105,6 @@ class ReviewForm extends React.Component {
 
               <div className='rating-box'>
 
-                <input
-                  type="number"
-                  value={this.state.rating}
-                  onChange={this.update("rating")}
-                />
-
                 <div className='rating-and-comment'>
                   <div className='review-rating-box'>
                     <Rating
@@ -122,7 +112,9 @@ class ReviewForm extends React.Component {
                         <img src="https://res.cloudinary.com/adrienne/image/upload/v1506642061/empty_star.png"/>}
                       full={
                         <img src="https://res.cloudinary.com/adrienne/image/upload/v1506642062/full_star.png"/>}
+                      onChange={this.update('rating')}
                       />
+
                     <p>Select your rating.</p>
                   </div>
                   </div>
