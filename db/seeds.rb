@@ -114,7 +114,7 @@ Business.create(
 
 Business.create(
   name: 'Tartine Bakery',
-  img_url: 'http://www.tartinebakery.com/stickybun/wp-content/uploads/2013/04/151.jpg,
+  img_url: 'https://res.cloudinary.com/adrienne/image/upload/v1506663443/tartine_bread.jpg,
             https://s3-media2.fl.yelpcdn.com/bphoto/Yg2yB2gOZDuiWuek_q1zYA/o.jpg,
             https://s3-media1.fl.yelpcdn.com/bphoto/gxMtWzJnldz2_8iTdT5oSA/o.jpg',
   address: '600 Guerrero St, San Francisco, CA 94110',

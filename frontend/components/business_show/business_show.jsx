@@ -110,7 +110,7 @@ class BusinessShow extends React.Component {
     }
     else if (this.getBizHours()) {
       // green clock
-      return <img src='http://res.cloudinary.com/adrienne/image/upload/v1506320640/green_clock_icon.png' />;
+      return <img src='https://res.cloudinary.com/adrienne/image/upload/v1506320640/green_clock_icon.png' />;
     } else {
       return null;
     }
