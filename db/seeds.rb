@@ -10,7 +10,7 @@ User.delete_all
 Business.delete_all
 Review.delete_all
 
-User.create(username: 'guest user', password: '123456')
+User.create(username: 'guest', password: '123456')
 
 Business.create(
   name: 'Boba Guys - Potrero Hill',

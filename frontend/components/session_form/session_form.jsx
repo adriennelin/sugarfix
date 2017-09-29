@@ -58,7 +58,7 @@ class SessionForm extends React.Component{
   demoLogin(){
     return (e) => {
       e.preventDefault();
-      this.props.login({username:'guest user', password:'123456'});
+      this.props.login({username:'guest', password:'123456'});
     };
   }
 
@@ -74,15 +74,11 @@ class SessionForm extends React.Component{
           {this.renderErrors()}
 
           <div className='session-form-inputs'>
-            <label>
               <input className='login-field' type='text' value={this.state.username}
                      placeholder='Username' onChange={this.update('username')} />
-            </label>
             <br/>
-            <label>
               <input className='login-field' type='password' value={this.state.password}
                      placeholder='Password' onChange={this.update('password')} />
-            </label>
             <br/>
             <input type='submit' className='session-submit-button'
                    value={this.props.formType === 'login' ? 'Log In' : 'Sign Up'}/>

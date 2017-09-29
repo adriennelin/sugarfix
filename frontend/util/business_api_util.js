@@ -36,3 +36,11 @@ export const createReview = data => (
     data
   })
 );
+
+export const search = query => (
+  $.ajax({
+    method: 'GET',
+    url: 'api/omnisearch',
+    data: {query}
+  })
+);

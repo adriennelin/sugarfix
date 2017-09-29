@@ -115,7 +115,7 @@ class ReviewForm extends React.Component {
                         <img src="https://res.cloudinary.com/adrienne/image/upload/v1506642061/empty_star.png"/>}
                       full={
                         <img src="https://res.cloudinary.com/adrienne/image/upload/v1506642062/full_star.png"/>}
-                      onChange={this.updateRating(rate)}
+                      onChange={this.updateRating('rate')}
                       />
 
                     <p>Select your rating.</p>

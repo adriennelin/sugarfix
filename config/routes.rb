@@ -4,6 +4,8 @@ Rails.application.routes.draw do
       resource :session, only: [:create, :destroy, :show]
       resources :businesses, only: [:index, :create, :update, :show]
       resources :reviews, only: [:index, :create, :update, :destroy]
+      get '/omnisearch', to: "businesses#omnisearch"
+
     end
 
   root "static_pages#root"

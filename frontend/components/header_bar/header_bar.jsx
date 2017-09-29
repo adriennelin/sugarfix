@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 class HeaderBar extends React.Component {
   constructor(props){
     super(props);
+    this.state  = {
+      query: ""
+    };
   }
 
   signupLink() {
@@ -23,6 +26,13 @@ class HeaderBar extends React.Component {
     );
   }
 
+  handleClick() {
+    return (e) => {
+      this.setState({query: e.currentTarget.value});
+      this.props.omnisearch(e.currentTarget.value);
+    };
+  }
+
   render() {
     return (
       <div className='header-bar'>
@@ -30,6 +40,24 @@ class HeaderBar extends React.Component {
           <img src='https://res.cloudinary.com/adrienne/image/upload/v1505933816/logo-white_blfc6f.png'
             className='logo' alt='sugarfix logo'></img>
         </a>
+
+        <div className='search-bar'>
+          <label className='find'><span>Find</span>
+            <input type='text'
+              value={this.state.query}
+              placeholder='ice cream'/>
+          </label>
+          <label className='city'><span>Near</span>
+            <input type='text'
+              value={this.state.query}
+              placeholder='San Francisco, CA'/>
+          </label>
+        <button className='search-button'
+                onClick={this.handleClick()}>
+                <img src='https://res.cloudinary.com/adrienne/image/upload/v1506708752/search_cqzila.png'/>
+        </button>
+        </div>
+
            {this.props.currentUser ?
              this.welcomeMessage(this.props.currentUser, this.props.logout)
                   : this.signupLink()}
