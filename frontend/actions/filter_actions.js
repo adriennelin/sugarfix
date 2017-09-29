@@ -1,4 +1,4 @@
-import { fetchBusinesses } from './business_actions';
+import { receiveBusinesses, fetchBusinesses } from './business_actions';
 import * as APIUtil from '../util/business_api_util';
 
 
@@ -17,6 +17,6 @@ export const updateFilter = (filter, value) => (dispatch, getState) => {
 
 export const omnisearch = query => dispatch => (
   APIUtil.search(query).then( businesses =>
-  (dispatch(fetchBusinesses(businesses)))
+  (dispatch(receiveBusinesses(businesses)))
   )
 );

@@ -9,7 +9,8 @@ class Api::BusinessesController < ApplicationController
 
   def omnisearch
     @businesses = Business
-                    .where("LOWER(name) LIKE ?", "%#{params[:query]}%".downcase)
+                    .where("LOWER(name) LIKE ? OR LOWER(category) LIKE ?",
+                     "%#{params[:query]}%".downcase, "%#{params[:query]}%".downcase)
                     .limit(10)
     render :index
   end

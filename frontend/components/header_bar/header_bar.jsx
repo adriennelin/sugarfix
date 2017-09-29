@@ -5,7 +5,8 @@ class HeaderBar extends React.Component {
   constructor(props){
     super(props);
     this.state  = {
-      query: ""
+      query: "",
+      location: ""
     };
   }
 
@@ -26,10 +27,15 @@ class HeaderBar extends React.Component {
     );
   }
 
-  handleClick() {
+  handleChange() {
     return (e) => {
       this.setState({query: e.currentTarget.value});
-      this.props.omnisearch(e.currentTarget.value);
+    };
+  }
+
+  handleClick() {
+    return (e) => {
+      this.props.omnisearch(this.state.query);
     };
   }
 
@@ -45,11 +51,12 @@ class HeaderBar extends React.Component {
           <label className='find'><span>Find</span>
             <input type='text'
               value={this.state.query}
-              placeholder='ice cream'/>
+              placeholder='ice cream'
+              onChange={this.handleChange()}/>
           </label>
           <label className='city'><span>Near</span>
             <input type='text'
-              value={this.state.query}
+              value={this.state.location}
               placeholder='San Francisco, CA'/>
           </label>
         <button className='search-button'
