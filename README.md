@@ -6,7 +6,7 @@ Get your SugarFix! - Live [demo](https://sugarfix-yelp-clone.herokuapp.com/#/).
 
 ## Features
 * Browse and search for businesses by location
-* Filter results with using the current view in Google Maps.
+* Filter results using the current view in Google Maps.
 * Obtain business information such as address, phone, hours, website, menu, and health score.
 * Read user-generated reviews and photos.
 * Create reviews and add photos.
@@ -19,9 +19,9 @@ Get your SugarFix! - Live [demo](https://sugarfix-yelp-clone.herokuapp.com/#/).
 
 ## Google Maps Real-time Search
 
-SugarFix is focused on bringing local businesses to users. One of the key features is an interactive map that displays the search results visually. The map allows the user to filter businesses based on what is currently shown inside the map frame.
+SugarFix is focused on bringing local businesses to users. A key feature is an interactive map that displays the search results visually. The map allows the user to filter businesses based on what is currently shown inside the map frame.
 
-![google maps full view](https://res.cloudinary.com/adrienne/image/upload/c_scale,w_425/v1506716526/Google_maps_full_wdnlez.png)  ![google maps zoomed](https://res.cloudinary.com/adrienne/image/upload/c_scale,w_425/v1506716809/Google_maps_zoomed_swsn4y.png)
+![google maps gif](https://res.cloudinary.com/adrienne/image/upload/c_scale,w_800/v1506726612/google_maps_filter_gnhvau.gif)
 
 ## Content Rich Business View
 
@@ -107,5 +107,5 @@ Map marker numbers reflect the order of the current businesses listed. To accoun
 * Multi-city platform
   * Expand SugarFix outside San Francisco and implement ability to search by city.
   
-
+---
 Additional supporting documents (wireframes, database schema, sample state, routes) can be found in the project wiki.
