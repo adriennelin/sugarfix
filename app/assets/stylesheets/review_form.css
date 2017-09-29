@@ -48,18 +48,34 @@
   font-size: 14px;
 }
 
-.rating-and-comment {
-  padding: 18px 15px 0;
-  margin: 6px 0 12px;
-  background: #fff;
+.rating-box {
   border: 1px solid #999;
   border-radius: 3px;
+  margin-top: 4px;
+  padding: 18px 15px 0;
+  margin: 6px 0 4px;
+}
+
+.rating-and-comment {
+  background: #fff;
 }
 
 .review-rating-box {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
+  height:auto;
+  display: flex;
 }
 
+.review-rating-box img {
+  margin-right: 3px;
+  width: 30px;
+  height: 30px;
+}
+
+.review-rating-box p {
+  font-size: 14px;
+  margin: 8px 0 0 9px;
+}
 .review-textarea {
   min-height: 156px;
   width: 100%;

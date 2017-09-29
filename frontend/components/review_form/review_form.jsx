@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import PreviousReviewItem from './previous_review_item';
+import Rating from 'react-rating';
 
 class ReviewForm extends React.Component {
   constructor(props) {
@@ -70,69 +71,75 @@ class ReviewForm extends React.Component {
           <div className='review-header'>
             <h3>Write a Review</h3>
           </div>
-            <div className='review-form-biz-summary'>
-              <div className='biz-photo'>
-                {this.getFirstImage()}
-              </div>
-
-              <div className='main-attr'>
-                <span className='rev-biz-name'>
-                  <Link to={`/businesses/${biz.id}`}>
-                  {biz.name}</Link></span>
-
-                <div className='price-category'>
-                  <span className='price'>
-                    {biz.cost}
-                  </span>
-
-                  <span className='bullet'>
-                    •
-                  </span>
-
-                  <span className='category'>
-                    {biz.category}
-                  </span>
-                </div>
-                <address className='address'>
-                  {biz.address.split(',')[0]}
-                  <br/>
-                  {biz.address.split(',')[1]},
-                  {biz.address.split(',')[2]}
-                </address>
-              </div>
+          <div className='review-form-biz-summary'>
+            <div className='biz-photo'>
+              {this.getFirstImage()}
             </div>
+
+            <div className='main-attr'>
+              <span className='rev-biz-name'>
+                <Link to={`/businesses/${biz.id}`}>
+                {biz.name}</Link></span>
+
+              <div className='price-category'>
+                <span className='price'>
+                  {biz.cost}
+                </span>
+
+                <span className='bullet'>
+                  •
+                </span>
+
+                <span className='category'>
+                  {biz.category}
+                </span>
+              </div>
+              <address className='address'>
+                {biz.address.split(',')[0]}
+                <br/>
+                {biz.address.split(',')[1]},
+                {biz.address.split(',')[2]}
+              </address>
+            </div>
+          </div>
 
           <div className="review-form">
             <form onSubmit={this.handleSubmit()}>
-              <label>Rating</label>
-              <br/>
-              <input
-                type="number"
-                value={this.state.rating}
-                onChange={this.update("rating")}
-              />
-              <br/>
-
               <label>Your review</label>
-              <br/>
-              <div className='rating-and-comment'>
-                <div className='review-rating-box'>
 
-                </div>
+              <div className='rating-box'>
 
-                <div className='textarea-container'>
-                  <textarea className='review-textarea'
-                    cols="30"
-                    rows="10"
-                    value={this.state.body}
-                    onChange={this.update("body")}
-                    placeholder="Your review helps others learn about
-                    great dessert spots.
+                <input
+                  type="number"
+                  value={this.state.rating}
+                  onChange={this.update("rating")}
+                />
 
-                    Please don't review if you received a freebie for
-                    writing this review, or if you're connected to the
-                    owner or employees."
-                  />
+                <div className='rating-and-comment'>
+                  <div className='review-rating-box'>
+                    <Rating
+                      empty={
+                        <img src="https://res.cloudinary.com/adrienne/image/upload/v1506642061/empty_star.png"/>}
+                      full={
+                        <img src="https://res.cloudinary.com/adrienne/image/upload/v1506642062/full_star.png"/>}
+                      />
+                    <p>Select your rating.</p>
+                  </div>
+                  </div>
+
+                  <div className='textarea-container'>
+                    <textarea className='review-textarea'
+                      cols="30"
+                      rows="10"
+                      value={this.state.body}
+                      onChange={this.update("body")}
+                      placeholder="Your review helps others learn about
+                      great dessert spots.
+
+                      Please don't review if you received a freebie for
+                      writing this review, or if you're connected to the
+                      owner or employees."
+                    />
                 </div>
               </div>
               <br/>
