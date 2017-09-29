@@ -20,6 +20,7 @@
     "redux-thunk": "^2.2.0",
     "webpack": "^3.6.0"
   },
+  
   "description": "Check the wiki",
   "version": "1.0.0",
   "main": "index.js",
