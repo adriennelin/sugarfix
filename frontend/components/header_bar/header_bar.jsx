@@ -17,7 +17,7 @@ class HeaderBar extends React.Component {
   welcomeMessage(currentUser, logout) {
     return (
     <div className='logged-in-message'>
-      <h3>Welcome, {currentUser.username}!</h3>
+      <h3>Welcome, {currentUser.username}</h3>
       <button className='logout-button' onClick={logout}>Log Out</button>
     </div>
     );

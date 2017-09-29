@@ -134,11 +134,11 @@ class ReviewForm extends React.Component {
                       value={this.state.body}
                       onChange={this.update("body")}
                       placeholder="Your review helps others learn about
-                      great dessert spots.
+                      sweet dessert spots.
 
                       Please don't review if you received a freebie for
-                      writing this review, or if you're connected to the
-                      owner or employees."
+                      writing this, or if you're connected to the
+                      business."
                     />
                 </div>
               </div>

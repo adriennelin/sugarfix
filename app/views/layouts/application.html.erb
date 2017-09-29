@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>SugarFix</title>
-    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyBcC299HsUFxi6WKAirhZiANVO-jZ6lmz8" %>
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['google_api_key']}" %>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
