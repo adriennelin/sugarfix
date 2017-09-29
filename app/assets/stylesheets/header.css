@@ -53,6 +53,7 @@
   line-height: 20px;
   position: relative;
   width:50%;
+  pointer-events:none;
 }
 
 .search-button {
