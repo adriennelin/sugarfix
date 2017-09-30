@@ -6,7 +6,7 @@ Get your SugarFix! - Live [demo](https://sugarfix-yelp-clone.herokuapp.com/#/).
 
 ## Features
 * Browse and search for businesses by location
-* Filter results with using the current view in Google Maps.
+* Filter results using the current view in Google Maps.
 * Obtain business information such as address, phone, hours, website, menu, and health score.
 * Read user-generated reviews and photos.
 * Create reviews and add photos.
@@ -19,15 +19,15 @@ Get your SugarFix! - Live [demo](https://sugarfix-yelp-clone.herokuapp.com/#/).
 
 ## Google Maps Real-time Search
 
-SugarFix is focused on bringing local businesses to users. One of the key features is an interactive map that displays the search results visually. The map allows the user to filter businesses based on what is currently shown inside the map frame.
+SugarFix is focused on bringing local businesses to users. A key feature is an interactive map that displays search results visually. The map allows the user to filter businesses based on what is currently shown inside the map frame.
 
-![google maps full view](https://res.cloudinary.com/adrienne/image/upload/c_scale,w_425/v1506716526/Google_maps_full_wdnlez.png)  ![google maps zoomed](https://res.cloudinary.com/adrienne/image/upload/c_scale,w_425/v1506716809/Google_maps_zoomed_swsn4y.png)
+![google maps gif](https://res.cloudinary.com/adrienne/image/upload/c_scale,w_800/v1506726612/google_maps_filter_gnhvau.gif)
 
 ## Content Rich Business View
 
 Users can find all relevant business information directly on the SugarFix business pages. Useful data such as hours are dynamically rendered depending on availability. For example, if a location is closed that day, the clock icon turns red instead of green.
 
-A select trio of food photos are featured front and center. If a menu is available, users will see the direct menu link for convenience in addition to the main business website.
+A select trio of food photos for that business are featured. If a menu is available, users will see the direct menu link for convenience in addition to the business website.
 
 Reviews are displayed in a clean format and show the reviewer photo to increase community and trust. 
 
@@ -74,12 +74,12 @@ Map markers rerender automatically after moving the map. This is accomplished by
 
 ```
 
-Map marker numbers reflect the order of the current businesses listed. To account for the marker number, I added an `idx` variable to marker creation that pulls from the current business array. Markers are also deleted if the business is not part of the current filter.
+Map marker numbers reflect the order of the current listed businesses. To account for the marker number, I added an `idx` variable to marker creation that pulls from the current business array. Markers are also deleted if the business is not part of the current filter.
 
 ```
   updateMarkers(businesses){
     const bizObj = {};
-    businesses.forEach((biz) => bizObj[biz.id] = biz);
+    businesses.forEach(biz => bizObj[biz.id] = biz);
 
     businesses
       .filter(biz => !this.markers[biz.id])
@@ -88,7 +88,7 @@ Map marker numbers reflect the order of the current businesses listed. To accoun
 
     Object.keys(this.markers)
       .filter(bizId => !bizObj[bizId])
-      .forEach((bizId) => this.removeMarker(this.markers[bizId]));
+      .forEach(bizId => this.removeMarker(this.markers[bizId]));
   }
   
 ```
@@ -107,5 +107,5 @@ Map marker numbers reflect the order of the current businesses listed. To accoun
 * Multi-city platform
   * Expand SugarFix outside San Francisco and implement ability to search by city.
   
-
+---
 Additional supporting documents (wireframes, database schema, sample state, routes) can be found in the project wiki.
