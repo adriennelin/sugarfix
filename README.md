@@ -1,6 +1,6 @@
-![sugarfix logo](https://res.cloudinary.com/adrienne/image/upload/b_rgb:d32323,c_scale,w_140/v1505933816/logo-white_blfc6f.png)
+![sugarfix logo](https://res.cloudinary.com/adrienne/image/upload/c_scale,w_160/v1506828348/sugarfix_logo_br.png)
 
-SugarFix is a dessert-themed, full-stack web application inspired by Yelp. Users can browse local dessert spots, read user generated reviews, and add their own reviews.
+SugarFix is a dessert-themed, full-stack web application clone of Yelp. Users can browse local dessert spots, read user generated reviews, and add their own reviews.
 
 Get your SugarFix! - Live [demo](https://sugarfix-yelp-clone.herokuapp.com/#/).
 
