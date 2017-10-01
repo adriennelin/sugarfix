@@ -13,7 +13,7 @@ class Api::ReviewsController < ApplicationController
     @review = Review.new(review_params)
 
     if @review.save
-      render :show
+      redirect_to "/#/businesses/#{params[:bizId]}"
     else
       render json: @review, status: :unprocessable_entity
     end

@@ -45,10 +45,6 @@ class ReviewForm extends React.Component {
     return e => this.setState({ [field]: e.currentTarget.value });
   }
 
-  updateRating(rate){
-    return e => this.setState({ ['rating']:rate });
-  }
-
   getFirstImage(){
     if (!this.props.business) {
       return null;
@@ -115,7 +111,8 @@ class ReviewForm extends React.Component {
                         <img src="https://res.cloudinary.com/adrienne/image/upload/v1506642061/empty_star.png"/>}
                       full={
                         <img src="https://res.cloudinary.com/adrienne/image/upload/v1506642062/full_star.png"/>}
-                      onChange={this.updateRating('rate')}
+                      onClick={rating => this.setState({['rating']: rating})}
+                      initialRate={this.state.rating}
                       />
 
                     <p>Select your rating.</p>
