@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect, withRouter } from 'react-router-dom';
+
 
 class HeaderBar extends React.Component {
   constructor(props){
@@ -8,6 +9,16 @@ class HeaderBar extends React.Component {
       query: "",
       location: ""
     };
+  }
+
+  componentDidMount() {
+    const find = document.querySelector('.find-input');
+    find.addEventListener('keypress', e => {
+      const key = e.which || e.keyCode;
+      if (key === 13) {
+        this.props.omnisearch(this.state.query);
+      }
+    });
   }
 
   signupLink() {
@@ -49,7 +60,8 @@ class HeaderBar extends React.Component {
 
         <div className='search-bar'>
           <label className='find'><span>Find</span>
-            <input type='text'
+            <input className='find-input'
+              type='text'
               value={this.state.query}
               placeholder='ice cream'
               onChange={this.handleChange()}/>
@@ -73,4 +85,4 @@ class HeaderBar extends React.Component {
   }
 }
 
-export default HeaderBar;
+export default withRouter(HeaderBar);
