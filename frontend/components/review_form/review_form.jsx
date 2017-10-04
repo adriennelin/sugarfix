@@ -11,7 +11,7 @@ class ReviewForm extends React.Component {
       body: '',
       biz_id: this.props.match.params.businessId,
       reviewer_name: this.props.currentUser.username,
-      reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506658158/yelp-blank-avatar.png',
+      reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506658158/sugarfix/yelp-blank-avatar.png',
       review_photos: ''
     };
     this.navigateToBusinessShow = this.navigateToBusinessShow.bind(this);
@@ -108,9 +108,9 @@ class ReviewForm extends React.Component {
                   <div className='review-rating-box'>
                     <Rating
                       empty={
-                        <img src="https://res.cloudinary.com/adrienne/image/upload/v1506642061/empty_star.png"/>}
+                        <img src="https://res.cloudinary.com/adrienne/image/upload/v1506642061/sugarfix/empty_star.png"/>}
                       full={
-                        <img src="https://res.cloudinary.com/adrienne/image/upload/v1506642062/full_star.png"/>}
+                        <img src="https://res.cloudinary.com/adrienne/image/upload/v1506642062/sugarfix/full_star.png"/>}
                       onClick={rating => this.setState({['rating']: rating})}
                       initialRate={this.state.rating}
                       />

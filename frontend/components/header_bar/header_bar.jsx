@@ -73,7 +73,7 @@ class HeaderBar extends React.Component {
           </label>
         <button className='search-button'
                 onClick={this.handleClick()}>
-                <img src='https://res.cloudinary.com/adrienne/image/upload/v1506708752/search_cqzila.png'/>
+                <img src='https://res.cloudinary.com/adrienne/image/upload/v1506708752/sugarfix/search_cqzila.png'/>
         </button>
         </div>
 

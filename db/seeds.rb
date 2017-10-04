@@ -114,7 +114,7 @@ Business.create(
 
 Business.create(
   name: 'Tartine Bakery',
-  img_url: 'https://res.cloudinary.com/adrienne/image/upload/v1506663443/tartine_bread.jpg,
+  img_url: 'https://res.cloudinary.com/adrienne/image/upload/v1506663443/sugarfix/tartine_bread.jpg,
             https://s3-media2.fl.yelpcdn.com/bphoto/Yg2yB2gOZDuiWuek_q1zYA/o.jpg,
             https://s3-media1.fl.yelpcdn.com/bphoto/gxMtWzJnldz2_8iTdT5oSA/o.jpg',
   address: '600 Guerrero St, San Francisco, CA 94110',
@@ -269,7 +269,7 @@ Review.create(
   rating: 5,
   biz_id: 1,
   reviewer_name: 'Jess E.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/person18_ekhd3h.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/sugarfix/person18_ekhd3h.jpg',
   review_photos: 'https://s3-media2.fl.yelpcdn.com/bphoto/oX66vFSIyMRQhDWjl05EBA/o.jpg'
 )
 
@@ -285,7 +285,7 @@ Review.create(
   rating: 5,
   biz_id: 1,
   reviewer_name: 'Steven N.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person14_a6f6ir.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/sugarfix/person14_a6f6ir.jpg',
   review_photos: 'https://s3-media4.fl.yelpcdn.com/bphoto/pAoIn9QrIZ9tU7pz8-8DWg/o.jpg'
 )
 
@@ -297,7 +297,7 @@ Review.create(
   rating: 3,
   biz_id: 1,
   reviewer_name: 'Hangry P.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408529/person16_umehzg.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408529/sugarfix/person16_umehzg.jpg'
 )
 
 Review.create(
@@ -309,7 +309,7 @@ Review.create(
   rating: 4,
   biz_id: 1,
   reviewer_name: 'Stephanie L.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person8_uvhueb.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/sugarfix/person8_uvhueb.jpg',
   review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/Ikp9KwKDMk2rEkhTXPtKoA/o.jpg,
                   https://s3-media2.fl.yelpcdn.com/bphoto/8AmlI8Q_T-e0c2uaEI2itQ/o.jpg'
 
@@ -321,7 +321,7 @@ Review.create(
   rating: 4,
   biz_id: 2,
   reviewer_name: 'Sandy B.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408546/person7_c6usl0.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408546/sugarfix/person7_c6usl0.jpg'
 )
 
 Review.create(
@@ -333,7 +333,7 @@ Review.create(
   rating: 4,
   biz_id: 2,
   reviewer_name: 'Alex T.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person5_htq4yl.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/sugarfix/person5_htq4yl.jpg',
   review_photos: 'https://s3-media2.fl.yelpcdn.com/bphoto/wPCh-Ho33qGqU7-vXhHz1w/o.jpg'
 )
 
@@ -342,7 +342,7 @@ Review.create(
   rating: 5,
   biz_id: 2,
   reviewer_name: 'Toto W.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408277/person1_qyebwg.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408277/sugarfix/person1_qyebwg.jpg',
   review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/UEtTcuWl6mMKArY5fODiAA/o.jpg'
 )
 
@@ -359,7 +359,7 @@ Review.create(
   rating: 5,
   biz_id: 2,
   reviewer_name: 'Aiden W.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person12_oqc7ci.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/sugarfix/person12_oqc7ci.jpg',
   review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/W_iVkhuyalu5b5SnGb2Kkw/o.jpg,
                  https://s3-media1.fl.yelpcdn.com/bphoto/I_P4tqn0DrYdZeDxAFhucQ/o.jpg'
 )
@@ -372,7 +372,7 @@ Review.create(
   rating: 4,
   biz_id: 3,
   reviewer_name: 'Acorn L.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person6_lj9ok1.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/sugarfix/person6_lj9ok1.jpg',
   review_photos: 'https://s3-media2.fl.yelpcdn.com/bphoto/v6dJWSGqMEIsE0DdV3Uy7A/o.jpg'
 )
 
@@ -405,7 +405,7 @@ Review.create(
   rating: 5,
   biz_id: 3,
   reviewer_name: 'Adrienne L.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/person20_fmy1o9.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/sugarfix/person20_fmy1o9.jpg',
   review_photos: 'https://s3-media2.fl.yelpcdn.com/bphoto/kck1WGQ0nnw0Z6j3W9FtZQ/o.jpg,
                   https://s3-media1.fl.yelpcdn.com/bphoto/4D03Qystx4hu4dAXe_ozCg/o.jpg'
 )
@@ -417,7 +417,7 @@ Review.create(
   rating: 5,
   biz_id: 3,
   reviewer_name: 'Jess R.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person4_ffrwoo.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/sugarfix/person4_ffrwoo.jpg',
   review_photos: 'https://s3-media3.fl.yelpcdn.com/bphoto/tSJopiYibNwIFMBZ6YRBQA/o.jpg'
 )
 
@@ -430,7 +430,7 @@ Review.create(
   rating: 4,
   biz_id: 4,
   reviewer_name: 'Justin S.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person10_lqu0sm.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/sugarfix/person10_lqu0sm.jpg',
   review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/MGhBZ6EHb53jkONxLor4nw/o.jpg'
 )
 
@@ -440,7 +440,7 @@ Review.create(
   rating: 3,
   biz_id: 4,
   reviewer_name: 'Totoro Q.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person3_jjynkb.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/sugarfix/person3_jjynkb.jpg'
 )
 
 Review.create(
@@ -451,7 +451,7 @@ Review.create(
   rating: 5,
   biz_id: 4,
   reviewer_name: 'Aisha C.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person2_rdzdzw.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/sugarfix/person2_rdzdzw.jpg',
   review_photos: 'https://s3-media4.fl.yelpcdn.com/bphoto/lHc7oWt160i1tOAK9GWFBA/o.jpg,
                   https://s3-media1.fl.yelpcdn.com/bphoto/8vLCZZZxxOG7Ik6inr3TLw/o.jpg'
 )
@@ -465,7 +465,7 @@ Review.create(
   rating: 4,
   biz_id: 4,
   reviewer_name: 'Tiffany H.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person13_hryr9q.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/sugarfix/person13_hryr9q.jpg'
 )
 
 Review.create(
@@ -482,7 +482,7 @@ Review.create(
   rating: 5,
   biz_id: 5,
   reviewer_name: 'Adrienne L.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/person20_fmy1o9.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/sugarfix/person20_fmy1o9.jpg',
   review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/y_IVO6eVrQ_L-yPcmN-UYQ/o.jpg'
 )
 
@@ -493,7 +493,7 @@ Review.create(
   rating: 5,
   biz_id: 5,
   reviewer_name: 'Andy H.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person15_l9c3io.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/sugarfix/person15_l9c3io.jpg',
   review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/y_IVO6eVrQ_L-yPcmN-UYQ/o.jpg'
 )
 
@@ -507,7 +507,7 @@ Review.create(
   rating: 4,
   biz_id: 5,
   reviewer_name: 'Drew M.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408277/person1_qyebwg.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408277/sugarfix/person1_qyebwg.jpg'
 )
 
 Review.create(
@@ -516,7 +516,7 @@ Review.create(
   rating: 5,
   biz_id: 5,
   reviewer_name: 'Jessie S.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408160/person11_ubaciw.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408160/sugarfix/person11_ubaciw.jpg',
   review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/gxMtWzJnldz2_8iTdT5oSA/o.jpg'
 )
 
@@ -525,7 +525,7 @@ Review.create(
   rating: 3,
   biz_id: 6,
   reviewer_name: 'Totoro Q.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person3_jjynkb.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/sugarfix/person3_jjynkb.jpg'
 )
 
 Review.create(
@@ -537,7 +537,7 @@ Review.create(
   rating: 5,
   biz_id: 6,
   reviewer_name: 'Wilson M.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person17_yefljl.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/sugarfix/person17_yefljl.jpg',
   review_photos: 'https://s3-media4.fl.yelpcdn.com/bphoto/NMbIGeIjLUjNTuWJ3sdOVQ/o.jpg'
 )
 
@@ -549,7 +549,7 @@ Review.create(
   rating: 4,
   biz_id: 6,
   reviewer_name: 'Jenny Y.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person5_htq4yl.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/sugarfix/person5_htq4yl.jpg',
   review_photos: 'https://s3-media3.fl.yelpcdn.com/bphoto/btOw0WIH3Zw49BEvC8QD4A/o.jpg,
                   https://s3-media4.fl.yelpcdn.com/bphoto/0E24Lrda07b1wq3jgU_Cng/o.jpg'
 )
@@ -561,7 +561,7 @@ Review.create(
   rating: 4,
   biz_id: 6,
   reviewer_name: 'Jeffrey G.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408277/person1_qyebwg.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408277/sugarfix/person1_qyebwg.jpg',
   review_photos: ''
 )
 
@@ -573,7 +573,7 @@ Review.create(
   rating: 4,
   biz_id: 7,
   reviewer_name: 'Joy M.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408160/person11_ubaciw.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408160/sugarfix/person11_ubaciw.jpg',
   review_photos: 'https://s3-media4.fl.yelpcdn.com/bphoto/B3bLo5PqvSV8SYVwmTRjtg/o.jpg,
                  https://s3-media1.fl.yelpcdn.com/bphoto/oU2cmIZnsuxuFKcHV9hUXA/o.jpg'
 )
@@ -587,7 +587,7 @@ Review.create(
   rating: 2,
   biz_id: 7,
   reviewer_name: 'Tim M.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person9_ldyyeh.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/sugarfix/person9_ldyyeh.jpg',
   review_photos: 'https://s3-media4.fl.yelpcdn.com/bphoto/1tIUzCeE4rGO9yVKJBEkbQ/o.jpg'
 )
 
@@ -598,7 +598,7 @@ Review.create(
   rating: 5,
   biz_id: 7,
   reviewer_name: 'Amy Z.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person8_uvhueb.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/sugarfix/person8_uvhueb.jpg',
   review_photos: 'https://s3-media3.fl.yelpcdn.com/bphoto/p4jjKiWadPDe9yKF1MF1Og/o.jpg'
 )
 
@@ -610,7 +610,7 @@ Review.create(
   rating: 4,
   biz_id: 7,
   reviewer_name: 'Kewpie L.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408546/person7_c6usl0.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408546/sugarfix/person7_c6usl0.jpg'
 )
 
 Review.create(
@@ -619,7 +619,7 @@ Review.create(
   rating: 5,
   biz_id: 8,
   reviewer_name: 'Ben A.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person15_l9c3io.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/sugarfix/person15_l9c3io.jpg',
   review_photos: 'https://s3-media2.fl.yelpcdn.com/bphoto/2iAFGY2bfokTu1nYtiJz1A/o.jpg,
                   https://s3-media2.fl.yelpcdn.com/bphoto/9V8mD7Gan7dDYgouaD6Wmw/o.jpg,
                   https://s3-media1.fl.yelpcdn.com/bphoto/oXsuSJcxLCifMxFlcVREHQ/o.jpg'
@@ -633,7 +633,7 @@ Review.create(
   rating: 3,
   biz_id: 8,
   reviewer_name: 'Ellie G.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person2_rdzdzw.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/sugarfix/person2_rdzdzw.jpg'
 )
 
 Review.create(
@@ -646,7 +646,7 @@ Review.create(
   rating: 5,
   biz_id: 8,
   reviewer_name: 'Ryan M.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person14_a6f6ir.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/sugarfix/person14_a6f6ir.jpg',
   review_photos: 'https://s3-media3.fl.yelpcdn.com/bphoto/SmlcqgkJj0_cgv11LANYQw/o.jpg'
 )
 
@@ -663,7 +663,7 @@ Review.create(
   rating: 4,
   biz_id: 9,
   reviewer_name: 'Shane C.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person9_ldyyeh.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/sugarfix/person9_ldyyeh.jpg',
   review_photos: 'https://s3-media4.fl.yelpcdn.com/bphoto/JhmUwHUB77xR2xQ8hBi3Rg/o.jpg'
 )
 
@@ -682,7 +682,7 @@ Review.create(
   rating: 4,
   biz_id: 9,
   reviewer_name: 'Adrienne L.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/person20_fmy1o9.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/sugarfix/person20_fmy1o9.jpg',
   review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/rG-rOhtTZIkV2cDl1wFHVQ/o.jpg,
                   https://s3-media4.fl.yelpcdn.com/bphoto/h6r00YD0Ga99pNDwkZSSzg/o.jpg'
 )
@@ -696,7 +696,7 @@ Review.create(
   rating: 5,
   biz_id: 9,
   reviewer_name: 'Jonathan O.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person10_lqu0sm.jpg'
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/sugarfix/person10_lqu0sm.jpg'
 )
 
 Review.create(
@@ -708,7 +708,7 @@ Review.create(
   rating: 3,
   biz_id: 9,
   reviewer_name: 'Chippy R.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person6_lj9ok1.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/sugarfix/person6_lj9ok1.jpg',
   review_photos: 'https://s3-media1.fl.yelpcdn.com/bphoto/reHD0k3eSTpNZAOzseVJMQ/o.jpg'
 )
 
@@ -718,7 +718,7 @@ Review.create(
   rating: 5,
   biz_id: 10,
   reviewer_name: 'Piggy K.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408529/person16_umehzg.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506408529/sugarfix/person16_umehzg.jpg',
   review_photos: 'https://s3-media2.fl.yelpcdn.com/bphoto/KSc0pLkalhdxaqnky-SKWw/o.jpg'
 )
 
@@ -739,7 +739,7 @@ Review.create(
   rating: 5,
   biz_id: 10,
   reviewer_name: 'Adrienne L.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/person20_fmy1o9.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407680/sugarfix/person20_fmy1o9.jpg',
   review_photos: 'https://s3-media4.fl.yelpcdn.com/bphoto/dua3TIDexSJhaUAe1cMNTQ/o.jpg,
                   https://s3-media2.fl.yelpcdn.com/bphoto/YmiXR9U9djpGyJIOoLgkxQ/o.jpg'
 )
@@ -752,7 +752,7 @@ Review.create(
   rating: 4,
   biz_id: 10,
   reviewer_name: 'Jane A.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/person13_hryr9q.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407679/sugarfix/person13_hryr9q.jpg',
   review_photos: 'https://s3-media3.fl.yelpcdn.com/bphoto/amCpGt32zSnFWTda7WOiJQ/o.jpg'
 )
 
@@ -763,6 +763,6 @@ Review.create(
   rating: 5,
   biz_id: 10,
   reviewer_name: 'Cutie P.',
-  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/person3_jjynkb.jpg',
+  reviewer_img: 'https://res.cloudinary.com/adrienne/image/upload/v1506407678/sugarfix/person3_jjynkb.jpg',
   review_photos: 'https://s3-media4.fl.yelpcdn.com/bphoto/7-P2yV5ahWQPsg_UYH8EXA/o.jpg'
 )

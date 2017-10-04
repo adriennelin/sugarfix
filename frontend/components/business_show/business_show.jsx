@@ -27,7 +27,7 @@ class BusinessShow extends React.Component {
 
   getLinkIcon(){
     if (this.getURL()) {
-      return <img src='https://res.cloudinary.com/adrienne/image/upload/v1506113350/link_icon_sjqvva.png' />;
+      return <img src='https://res.cloudinary.com/adrienne/image/upload/v1506113350/sugarfix/link_icon_sjqvva.png' />;
     }
   }
 
@@ -106,11 +106,11 @@ class BusinessShow extends React.Component {
   getClockIcon(){
     if (this.getBizHours() === ' Closed') {
       // red clock
-      return <img src='https://res.cloudinary.com/adrienne/image/upload/v1506355395/red_clock_icon_ca8xsc.png' />;
+      return <img src='https://res.cloudinary.com/adrienne/image/upload/v1506355395/sugarfix/red_clock_icon_ca8xsc.png' />;
     }
     else if (this.getBizHours()) {
       // green clock
-      return <img src='https://res.cloudinary.com/adrienne/image/upload/v1506320640/green_clock_icon.png' />;
+      return <img src='https://res.cloudinary.com/adrienne/image/upload/v1506320640/sugarfix/green_clock_icon.png' />;
     } else {
       return null;
     }
@@ -122,7 +122,7 @@ class BusinessShow extends React.Component {
         <a href={this.props.business.menu_url}
            target='_blank'>
           Full menu
-          <img src='https://res.cloudinary.com/adrienne/image/upload/v1506325423/blue_link_icon_t4s8ni.png' />
+          <img src='https://res.cloudinary.com/adrienne/image/upload/v1506325423/sugarfix/blue_link_icon_t4s8ni.png' />
         </a>
       );
     } else {
@@ -132,7 +132,7 @@ class BusinessShow extends React.Component {
 
   getMenuIcon(){
     if (this.getMenuUrl()){
-      return <img src='https://res.cloudinary.com/adrienne/image/upload/v1506324945/fork_knife_icon_aoxutb.png' />;
+      return <img src='https://res.cloudinary.com/adrienne/image/upload/v1506324945/sugarfix/fork_knife_icon_aoxutb.png' />;
     }
   }
 
@@ -144,37 +144,37 @@ class BusinessShow extends React.Component {
       case '$':
         return (
           <div className='dollars'>
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/grey_dollar_icon_igjxjs.png'/>
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/grey_dollar_icon_igjxjs.png'/>
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/grey_dollar_icon_igjxjs.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/sugarfix/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/sugarfix/grey_dollar_icon_igjxjs.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/sugarfix/grey_dollar_icon_igjxjs.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/sugarfix/grey_dollar_icon_igjxjs.png'/>
           </div>
         );
       case '$$':
         return (
           <div className='dollars'>
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/grey_dollar_icon_igjxjs.png'/>
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/grey_dollar_icon_igjxjs.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/sugarfix/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/sugarfix/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/sugarfix/grey_dollar_icon_igjxjs.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/sugarfix/grey_dollar_icon_igjxjs.png'/>
           </div>
         );
       case '$$$':
         return (
           <div className='dollars'>
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/grey_dollar_icon_igjxjs.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/sugarfix/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/sugarfix/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/sugarfix/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/sugarfix/grey_dollar_icon_igjxjs.png'/>
           </div>
         );
       case '$$$$':
         return (
           <div className='dollars'>
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
-            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/sugarfix/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/sugarfix/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/sugarfix/green_dollar_icon_hdaca0.png'/>
+            <img src='https://res.cloudinary.com/adrienne/image/upload/v1506321961/sugarfix/green_dollar_icon_hdaca0.png'/>
           </div>
         );
       default:
@@ -283,7 +283,7 @@ class BusinessShow extends React.Component {
                   <div className='map-text'>
                     <ul>
                       <span className='icon'>
-                        <img src='https://res.cloudinary.com/adrienne/image/upload/v1506113350/marker_icon_rwjbh6.png'
+                        <img src='https://res.cloudinary.com/adrienne/image/upload/v1506113350/sugarfix/marker_icon_rwjbh6.png'
                           />
                       </span>
                       <li className='map-address-box-li'>
@@ -301,7 +301,7 @@ class BusinessShow extends React.Component {
                       </li>
 
                       <span className='icon'>
-                        <img src='https://res.cloudinary.com/adrienne/image/upload/v1506113350/phone_icon_nep5f4.png'
+                        <img src='https://res.cloudinary.com/adrienne/image/upload/v1506113350/sugarfix/phone_icon_nep5f4.png'
                           />
                       </span>
                       <li className='phone'>
