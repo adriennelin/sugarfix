@@ -9,7 +9,7 @@ Get your SugarFix! - Live [demo](https://sugarfix-yelp-clone.herokuapp.com/#/).
 * Filter results using the current view in Google Maps.
 * Obtain business information such as address, phone, hours, website, menu, and health score.
 * Read user-generated reviews and photos.
-* Create reviews and add photos.
+* Create and post reviews.
 
 ## Technologies
 * Ruby on Rails backend
