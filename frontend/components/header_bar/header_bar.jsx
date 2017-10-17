@@ -54,7 +54,7 @@ class HeaderBar extends React.Component {
     return (
       <div className='header-bar'>
         <a href='/'>
-          <img src='https://res.cloudinary.com/adrienne/image/upload/v1505933816/logo-white_blfc6f.png'
+          <img src='https://res.cloudinary.com/adrienne/image/upload/v1505933816/sugarfix/logo-white_blfc6f.png'
             className='logo' alt='sugarfix logo'></img>
         </a>
 
