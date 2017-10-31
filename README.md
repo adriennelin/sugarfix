@@ -21,7 +21,7 @@ Get your SugarFix! - Live [demo](https://sugarfix-yelp-clone.herokuapp.com/#/).
 
 SugarFix is focused on bringing local businesses to users. A key feature is an interactive map that displays search results visually. The map allows the user to filter businesses based on what is currently shown inside the map frame.
 
-![google maps gif](https://res.cloudinary.com/adrienne/image/upload/c_scale,w_800/v1506726612/google_maps_filter_gnhvau.gif)
+![google maps gif](https://res.cloudinary.com/adrienne/image/upload/c_scale,h_410,q_auto:good/v1506726612/sugarfix/google_maps_filter_gnhvau.gif)
 
 ## Content Rich Business View
 
@@ -31,7 +31,7 @@ A select trio of food photos for that business are featured. If a menu is availa
 
 Reviews are displayed in a clean format and show the reviewer photo to increase community and trust. 
 
-![Tartine show page](https://res.cloudinary.com/adrienne/image/upload/c_scale,w_850/v1506717256/Tartine_show_page_jieajj.png)
+![Tartine show page](https://res.cloudinary.com/adrienne/image/upload/v1506717256/sugarfix/Tartine_show_page_jieajj.png)
 
 ---
 ## Select Code Snippets
